@@ -1,10 +1,11 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
+// Creating an interface
 interface LocationTracker {
     String getCurrentLocation();
     void updateLocation(String location);
 }
-
+// Creating an abstract class
 abstract class RideVehicle {
     private String vehicleId;
     private String driverName;
@@ -33,7 +34,7 @@ abstract class RideVehicle {
     protected String getLocation() {
         return currentLocation;
     }
-
+    // Creating a method to display details
     public void getVehicleDetails() {
         System.out.println("\nVehicle ID: " + vehicleId);
         System.out.println("Driver Name: " + driverName);
@@ -43,6 +44,7 @@ abstract class RideVehicle {
 
     public abstract double calculateFare(double distance);
 }
+// Extending a class
 class SedanRide extends RideVehicle implements LocationTracker {
 
     public SedanRide(String id, String driver) {
@@ -61,6 +63,7 @@ class SedanRide extends RideVehicle implements LocationTracker {
         setLocation(location);
     }
 }
+// Extending a class
 class TwoWheelerRide extends RideVehicle implements LocationTracker {
 
     public TwoWheelerRide(String id, String driver) {
@@ -79,6 +82,7 @@ class TwoWheelerRide extends RideVehicle implements LocationTracker {
         setLocation(location);
     }
 }
+// Extending a class
 class AutoRickshawRide extends RideVehicle implements LocationTracker {
 
     public AutoRickshawRide(String id, String driver) {
@@ -97,7 +101,7 @@ class AutoRickshawRide extends RideVehicle implements LocationTracker {
         setLocation(location);
     }
 }
-
+// Creating a main class named Ride Application
 public class RideApplication {
 
     // Polymorphism demonstration
@@ -105,7 +109,7 @@ public class RideApplication {
         System.out.print("Enter Current Location: ");
         sc.nextLine();
         String location = sc.nextLine();
-
+        // Looping to display information
         if (vehicle instanceof LocationTracker) {
             LocationTracker tracker = (LocationTracker) vehicle;
             tracker.updateLocation(location);
@@ -118,7 +122,7 @@ public class RideApplication {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.println("Choose Vehicle Type:");
         System.out.println("1. Sedan");
         System.out.println("2. Two Wheeler");
@@ -136,7 +140,7 @@ public class RideApplication {
         double distance = sc.nextDouble();
 
         RideVehicle vehicle;
-
+        // Using switch to get choice
         switch (choice) {
             case 1:
                 vehicle = new SedanRide(id, driver);
@@ -152,6 +156,7 @@ public class RideApplication {
                 sc.close();
                 return;
         }
+        // Calling method
         processRide(vehicle, distance, sc);
     }
 }

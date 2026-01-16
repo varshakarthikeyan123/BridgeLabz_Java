@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Level1;
 import java.util.Scanner;
+// Created a vehicle class
 class Vehicle {
     static double registrationFee = 0.0;
     String ownerName;
@@ -17,7 +18,7 @@ class Vehicle {
             registrationFee = newRegistrationFee;
         }
     }
-
+    // Created method
     static void displayDetails(Object obj) {
         if (obj instanceof Vehicle) {
             Vehicle v = (Vehicle) obj;
@@ -30,11 +31,11 @@ class Vehicle {
         }
     }
 }
-
+// Created a main class called regestration
 public class Registration {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
+        // Getting user input
         System.out.print("Enter registration fee: ");
         Vehicle.updateRegistrationFee(sc.nextDouble());
         System.out.print("Enter Registration Number: ");
@@ -45,6 +46,7 @@ public class Registration {
         System.out.print("Enter Vehicle Type: ");
         String type = sc.nextLine();
         Vehicle v1 = new Vehicle(regNo, name, type);
+        // Calling method
         Vehicle.displayDetails(v1);
     }
 }

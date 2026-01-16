@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Level1;
 import java.util.Scanner;
+// Created a class called Bank Account
 class BankAccount {
     static String bankName = "ABC National Bank";
     private static int totalAccounts = 0;
@@ -14,17 +15,19 @@ class BankAccount {
     static void getTotalAccounts() {
         System.out.println("Total accounts created: " + totalAccounts);
     }
+    // Created a method to display details
     void displayDetails() {
         System.out.println("Bank Name: " + bankName);
         System.out.println("Account Holder: " + accountHolderName);
         System.out.println("Account Number: " + accountNumber);
     }
 }
-
+// Created a main class called bank
 public class bank {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        // Getting user input
         System.out.print("Enter account holder name: ");
         String name1 = sc.nextLine();
 
@@ -53,7 +56,7 @@ public class bank {
         }
 
         System.out.println();
-
+        // Calling method
         BankAccount.getTotalAccounts();
 
     }

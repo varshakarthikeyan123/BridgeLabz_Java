@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Level1;
 import  java.util.Scanner;
+// Created a class called product
 class Product {
 
     static double discount = 0.0;
@@ -24,7 +25,7 @@ class Product {
             System.out.println("Invalid discount percentage");
         }
     }
-
+    // Created a method to get details
     static void processProduct(Object obj) {
         if (obj instanceof Product) {
             Product p = (Product) obj;
@@ -43,12 +44,12 @@ class Product {
         }
     }
 }
-
+// Created a main class called shopping cart
 public class ShoppingCart {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.print("Enter discount percentage: ");
         double dis = sc.nextDouble();
         Product.updateDiscount(dis);
@@ -67,7 +68,7 @@ public class ShoppingCart {
         int qty = sc.nextInt();
 
         Product p1 = new Product(id, name, price, qty);
-
+        // Calling method
         Product.processProduct(p1);
 
     }

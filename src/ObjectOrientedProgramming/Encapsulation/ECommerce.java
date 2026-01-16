@@ -1,10 +1,11 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
+// Creating an interface
 interface Taxable {
     double calculateTax();
     String getTaxDetails();
 }
-
+// Creating an abstract class
 abstract class Product {
     private int productId;
     private String name;
@@ -29,14 +30,15 @@ abstract class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-
     public abstract double calculateDiscount();
+    // Creating a method to display details
     public void displayDetails() {
         System.out.println("Product ID: " + productId);
         System.out.println("Name: " + name);
         System.out.println("Price: ₹" + price);
     }
 }
+// Extending a class
 class Electronics extends Product implements Taxable {
 
     public Electronics(int productId, String name, double price) {
@@ -55,7 +57,7 @@ class Electronics extends Product implements Taxable {
         return "18% GST applied";
     }
 }
-
+// Expalding a class
 class Clothing extends Product implements Taxable {
 
     public Clothing(int productId, String name, double price) {
@@ -74,7 +76,7 @@ class Clothing extends Product implements Taxable {
         return "5% GST applied";
     }
 }
-
+// Expanding a class
 class Groceries extends Product {
 
     public Groceries(int productId, String name, double price) {
@@ -85,8 +87,9 @@ class Groceries extends Product {
         return getPrice() * 0.05;
     }
 }
-
+// Creating a Main class named ECommerce
 public class ECommerce {
+    // Creating a method for printing final price
     public static void printFinalPrice(Product product) {
         double discount = product.calculateDiscount();
         double tax = 0;
@@ -108,19 +111,19 @@ public class ECommerce {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        // Getting input
         System.out.print("Enter number of products: ");
         int n = sc.nextInt();
-
+        // Created a new object for products
         Product[] products = new Product[n];
-
+        // Loop to get product choice
         for (int i = 0; i < n; i++) {
             System.out.println("\nChoose Product Type:");
             System.out.println("1. Electronics");
             System.out.println("2. Clothing");
             System.out.println("3. Groceries");
             int choice = sc.nextInt();
-
+            
             System.out.print("Enter Product ID: ");
             int id = sc.nextInt();
             sc.nextLine();
@@ -130,7 +133,7 @@ public class ECommerce {
 
             System.out.print("Enter Price: ");
             double price = sc.nextDouble();
-
+            // Switch case to get choice
             switch (choice) {
                 case 1:
                     products[i] = new Electronics(id, name, price);
@@ -146,6 +149,7 @@ public class ECommerce {
                     i--;
             }
         }
+        // Calling the method
         for (Product p : products) {
             printFinalPrice(p);
         }

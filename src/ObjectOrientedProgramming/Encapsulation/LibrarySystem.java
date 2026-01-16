@@ -1,9 +1,11 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
+// Creating an interface reservable
 interface Reservable {
     void reserveItem(String borrowerName);
     boolean checkAvailability();
 }
+// Created an abstract class
 abstract class LibraryItem {
     private String itemId;
     private String title;
@@ -42,6 +44,7 @@ abstract class LibraryItem {
     }
     public abstract int getLoanDuration();
 }
+// Extending a class
 class Book extends LibraryItem implements Reservable {
 
     public Book(String id, String title, String author) {
@@ -66,6 +69,7 @@ class Book extends LibraryItem implements Reservable {
         return isAvailable();
     }
 }
+// Extending a class
 class Magazine extends LibraryItem implements Reservable {
 
     public Magazine(String id, String title, String author) {
@@ -75,7 +79,7 @@ class Magazine extends LibraryItem implements Reservable {
     public int getLoanDuration() {
         return 7;
     }
-
+    // Creating a method to check the item
     public void reserveItem(String borrowerName) {
         if (checkAvailability()) {
             setBorrower(borrowerName);
@@ -90,6 +94,7 @@ class Magazine extends LibraryItem implements Reservable {
         return isAvailable();
     }
 }
+// Extending a class
 class DVD extends LibraryItem implements Reservable {
 
     public DVD(String id, String title, String author) {
@@ -136,7 +141,7 @@ public class LibrarySystem {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.println("Choose Item Type:");
         System.out.println("1. Book");
         System.out.println("2. Magazine");
@@ -154,7 +159,7 @@ public class LibrarySystem {
         String author = sc.nextLine();
 
         LibraryItem item;
-
+        // Using switch to get user choice
         switch (choice) {
             case 1:
                 item = new Book(id, title, author);

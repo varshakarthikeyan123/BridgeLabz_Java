@@ -1,10 +1,12 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
 import java.util.*;
+// Creating an interface
 interface Department {
     void assignDepartment(String deptName);
     String getDepartmentDetails();
 }
+// Creating an abstract class
 abstract class Employee {
     private int employeeId;
     private String name;
@@ -39,6 +41,7 @@ abstract class Employee {
         System.out.println("Salary      : ₹" + calculateSalary());
     }
 }
+// Extending a class
 class FullTimeEmployee extends Employee implements Department {
 
     private String department;
@@ -62,6 +65,7 @@ class FullTimeEmployee extends Employee implements Department {
         return department;
     }
 }
+// Extending a class
 class PartTimeEmployee extends Employee implements Department {
 
     private int hoursWorked;
@@ -89,6 +93,7 @@ class PartTimeEmployee extends Employee implements Department {
         return department;
     }
 }
+// Creating a main class called Employee System
 public class EmployeeSystem {
     public static void main(String[] args) {
 
@@ -97,9 +102,9 @@ public class EmployeeSystem {
         System.out.print("Enter number of employees: ");
         int n = sc.nextInt();
         sc.nextLine();
-
+        // Created a new object
         List<Employee> employees = new ArrayList<>();
-
+        // Looping to get choice
         for (int i = 0; i < n; i++) {
 
             System.out.println("\nSelect Employee Type:");
@@ -120,7 +125,7 @@ public class EmployeeSystem {
             String dept = sc.nextLine();
 
             Employee emp;
-
+            // Looping to provide value to the choice
             if (choice == 1) {
                 System.out.print("Enter Base Salary: ");
                 double salary = sc.nextDouble();
@@ -143,6 +148,7 @@ public class EmployeeSystem {
 
             employees.add(emp);
         }
+        // Calling the method
         for (Employee e : employees) {
             e.displayDetails();
             System.out.println("Department : " +

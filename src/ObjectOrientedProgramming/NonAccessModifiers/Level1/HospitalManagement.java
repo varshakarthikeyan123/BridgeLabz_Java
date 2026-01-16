@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Level1;
 import java.util.Scanner;
+// Created a class called patient
 class Patient {
     static String hospitalName = "City Care Hospital";
     static int totalPatients = 0;
@@ -14,9 +15,11 @@ class Patient {
         this.ailment = ailment;
         totalPatients++;
     }
+    // Created a method
     static void getTotalPatients() {
         System.out.println("\nTotal Patients Admitted: " + totalPatients);
     }
+    // Created a method to display details 
     static void displayPatient(Object obj) {
         if (obj instanceof Patient) {
             Patient p = (Patient) obj;
@@ -30,16 +33,17 @@ class Patient {
         }
     }
 }
+// Created a main called hospital maangement
 public class HospitalManagement {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.print("Enter number of patients: ");
         int n = sc.nextInt();
 
         Patient[] patients = new Patient[n];
-
+        // Looping to get details
         for (int i = 0; i < n; i++) {
 
             System.out.println("\nEnter details for Patient " + (i + 1));
@@ -60,6 +64,7 @@ public class HospitalManagement {
 
             patients[i] = new Patient(id, name, age, ailment);
         }
+        // Calling method
         Patient.getTotalPatients();
         for (Patient p : patients) {
             Patient.displayPatient(p);

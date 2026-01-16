@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Inheritance.AssignedProblems;
 import java.util.Scanner;
+// Created an employee class
 class Employee {
     String name;
     int id;
@@ -10,13 +11,14 @@ class Employee {
         this.id = id;
         this.salary = salary;
     }
-
+    // Created a method for displaying details
     void displayDetails() {
         System.out.println("Name   : " + name);
         System.out.println("ID     : " + id);
         System.out.println("Salary : ₹" + salary);
     }
 }
+// EExtending manager class
 class Manager extends Employee {
     int teamSize;
 
@@ -24,12 +26,14 @@ class Manager extends Employee {
         super(name, id, salary);
         this.teamSize = teamSize;
     }
+    // Method to display details
     void displayDetails() {
         super.displayDetails();
         System.out.println("Role   : Manager");
         System.out.println("Team Size : " + teamSize);
     }
 }
+// Extending the developer class
 class Developer extends Employee {
     String programmingLanguage;
 
@@ -43,6 +47,7 @@ class Developer extends Employee {
         System.out.println("Language : " + programmingLanguage);
     }
 }
+// Extending intern class
 class Intern extends Employee {
     int internshipDuration; // in months
 
@@ -50,18 +55,19 @@ class Intern extends Employee {
         super(name, id, salary);
         this.internshipDuration = internshipDuration;
     }
+    // Method to display details
     void displayDetails() {
         super.displayDetails();
         System.out.println("Role   : Intern");
         System.out.println("Duration : " + internshipDuration + " months");
     }
 }
-
+// Created a main class called employee system
 public class EmployeeSystem {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.println("Select Employee Type:");
         System.out.println("1. Manager");
         System.out.println("2. Developer");
@@ -81,7 +87,7 @@ public class EmployeeSystem {
         sc.nextLine();
 
         Employee emp;
-
+        // Switch case to get choice
         switch (choice) {
             case 1:
                 System.out.print("Enter Team Size: ");
@@ -106,7 +112,7 @@ public class EmployeeSystem {
                 sc.close();
                 return;
         }
-
+        // Calling method
         emp.displayDetails();
     }
 }

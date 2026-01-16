@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Level1;
 import java.util.Scanner;
+// Created a student class
 class Student {
     static String universityName = "Standford University";
 
@@ -16,7 +17,7 @@ class Student {
         this.grade = grade;
         totalStudents++;
     }
-
+    // Method to display total students
     static void displayTotalStudents() {
         System.out.println("\nTotal Students Enrolled: " +totalStudents);
     }
@@ -33,7 +34,7 @@ class Student {
         }
     }
 }
-
+// Created a main class name university student
 public class UniversityStudent {
     public static void main(String[] args) {
 
@@ -43,7 +44,7 @@ public class UniversityStudent {
         int n = sc.nextInt();
 
         Student[] students = new Student[n];
-
+        // Looping to get information
         for (int i = 0; i < n; i++) {
 
             System.out.println("\nEnter details for Student " + (i + 1));
@@ -60,6 +61,7 @@ public class UniversityStudent {
 
             students[i] = new Student(name, roll, grade);
         }
+        // Calling method
         Student.displayTotalStudents();
         for (Student s : students) {
             Student.processStudent(s);

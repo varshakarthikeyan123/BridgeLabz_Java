@@ -1,9 +1,11 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
+// Creating an interface called medical record
 interface MedicalRecord {
     void addRecord(String diagnosis, String history);
     void viewRecords();
 }
+// Creating an abstract class
 abstract class Patient {
     private String patientId;
     private String name;
@@ -31,18 +33,20 @@ abstract class Patient {
         this.diagnosis = diagnosis;
         this.medicalHistory = history;
     }
+    // Creating a method to display details
     public void getPatientDetails() {
         System.out.println("\nPatient ID: " + patientId);
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
-
+    // Creating a protected method
     protected void showMedicalDetails() {
         System.out.println("Diagnosis: " + diagnosis);
         System.out.println("Medical History: " + medicalHistory);
     }
     public abstract double calculateBill();
 }
+// Extending a class
 class InPatient extends Patient implements MedicalRecord {
     private int numberOfDays;
 
@@ -64,6 +68,7 @@ class InPatient extends Patient implements MedicalRecord {
         showMedicalDetails();
     }
 }
+// Extending a class
 class OutPatient extends Patient implements MedicalRecord {
 
     public OutPatient(String id, String name, int age) {
@@ -83,18 +88,19 @@ class OutPatient extends Patient implements MedicalRecord {
         showMedicalDetails();
     }
 }
+// Creating a main class named Hospital Management
 public class HospitalManagement {
 
     public static void processPatient(Patient patient, Scanner sc) {
         patient.getPatientDetails();
-
+        // Getting user input
         System.out.print("Enter Diagnosis: ");
         sc.nextLine();
         String diagnosis = sc.nextLine();
 
         System.out.print("Enter Medical History: ");
         String history = sc.nextLine();
-
+        // Looping to get patient details
         if (patient instanceof MedicalRecord) {
             MedicalRecord record = (MedicalRecord) patient;
             record.addRecord(diagnosis, history);
@@ -106,7 +112,7 @@ public class HospitalManagement {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input choice
         System.out.println("Choose Patient Type:");
         System.out.println("1. In-Patient");
         System.out.println("2. Out-Patient");
@@ -123,7 +129,7 @@ public class HospitalManagement {
         int age = sc.nextInt();
 
         Patient patient;
-
+        // Looping to diaplay the details of the choice
         if (choice == 1) {
             System.out.print("Enter Number of Days Admitted: ");
             int days = sc.nextInt();

@@ -1,9 +1,11 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
+// Creating an interface called lonable
 interface Loanable {
     void applyForLoan();
     double calculateLoanEligibility();
 }
+// Creating an abstract class 
 abstract class BankAccount {
     private String accountNumber;
     private String holderName;
@@ -41,13 +43,14 @@ abstract class BankAccount {
         }
     }
     public abstract double calculateInterest();
-
+    // Method to display details
     public void displayDetails() {
         System.out.println("\nAccount Number: " + accountNumber);
         System.out.println("Account Holder: " + holderName);
         System.out.println("Balance: ₹" + balance);
     }
 }
+// Extending a class
 class SavingsAccount extends BankAccount implements Loanable {
 
     public SavingsAccount(String accNo, String name, double balance) {
@@ -66,6 +69,7 @@ class SavingsAccount extends BankAccount implements Loanable {
         return balance * 5;
     }
 }
+// Extending a class
 class CurrentAccount extends BankAccount implements Loanable {
 
     public CurrentAccount(String accNo, String name, double balance) {
@@ -84,13 +88,14 @@ class CurrentAccount extends BankAccount implements Loanable {
         return balance * 3;
     }
 }
+// Creating a Main class named Banking System
 public class BankingSystem {
+    // Creating a method to process account
     public static void processAccount(BankAccount account) {
         account.displayDetails();
-
         double interest = account.calculateInterest();
         System.out.println("Calculated Interest: ₹" + interest);
-
+        // Looping to get loan
         if (account instanceof Loanable) {
             Loanable loan = (Loanable) account;
             loan.applyForLoan();
@@ -100,7 +105,7 @@ public class BankingSystem {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.println("Choose Account Type:");
         System.out.println("1. Savings Account");
         System.out.println("2. Current Account");
@@ -117,18 +122,19 @@ public class BankingSystem {
         double balance = sc.nextDouble();
 
         BankAccount account;
-
+        // Looping to get choice from user
         if (choice == 1) {
             account = new SavingsAccount(accNo, name, balance);
         } else {
             account = new CurrentAccount(accNo, name, balance);
         }
-
+        // Getting user input
         System.out.print("Enter deposit amount: ");
         account.deposit(sc.nextDouble());
 
         System.out.print("Enter withdrawal amount: ");
         account.withdraw(sc.nextDouble());
+        // Calling method
         processAccount(account);
     }
 }

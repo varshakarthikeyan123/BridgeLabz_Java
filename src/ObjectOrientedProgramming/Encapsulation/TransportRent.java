@@ -1,11 +1,11 @@
 package ObjectOrientedProgramming.Encapsulation;
 import java.util.Scanner;
-
+// Creating interface
 interface Insurable {
     double calculateInsurance(int days);
     String getInsuranceDetails();
 }
-
+// Creating an abstract class
 abstract class Vehicle {
     private String vehicleNumber;
     private String type;
@@ -33,6 +33,7 @@ abstract class Vehicle {
         System.out.println("Rental Rate per day: ₹" + rentalRate);
     }
 }
+// Extending a class
 class Car extends Vehicle implements Insurable {
     private String insurancePolicyNumber;
 
@@ -73,6 +74,7 @@ class Bike extends Vehicle implements Insurable {
         return "Bike Insurance | Policy No: " + insurancePolicyNumber;
     }
 }
+// Extending a class
 class Truck extends Vehicle implements Insurable {
     private String insurancePolicyNumber;
 
@@ -93,6 +95,7 @@ class Truck extends Vehicle implements Insurable {
         return "Truck Insurance | Policy No: " + insurancePolicyNumber;
     }
 }
+// Creating a main class called transport rent
 public class TransportRent {
     public static void calculateTotal(Vehicle vehicle, int days) {
         double rentalCost = vehicle.calculateRentalCost(days);
@@ -113,12 +116,12 @@ public class TransportRent {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        // Getting user input
         System.out.print("Enter number of vehicles: ");
         int n = sc.nextInt();
 
         Vehicle[] vehicles = new Vehicle[n];
-
+        // Looping to get details
         for (int i = 0; i < n; i++) {
             System.out.println("\nChoose Vehicle Type:");
             System.out.println("1. Car");
@@ -152,10 +155,10 @@ public class TransportRent {
                     i--;
             }
         }
-
+        // Getting input for number of rental days
         System.out.print("\nEnter number of rental days: ");
         int days = sc.nextInt();
-
+        // Calling method
         for (Vehicle v : vehicles) {
             calculateTotal(v, days);
         }

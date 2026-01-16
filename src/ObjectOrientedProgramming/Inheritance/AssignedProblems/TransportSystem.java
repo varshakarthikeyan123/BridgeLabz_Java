@@ -1,5 +1,6 @@
 package ObjectOrientedProgramming.Inheritance.AssignedProblems;
 import java.util.Scanner;
+// Created a vehicle class
 class Vehicle {
     int maxSpeed;
     String fuelType;
@@ -8,12 +9,13 @@ class Vehicle {
         this.maxSpeed = maxSpeed;
         this.fuelType = fuelType;
     }
-
+    // Method to display detials
     void displayInfo() {
         System.out.println("Max Speed : " + maxSpeed + " km/h");
         System.out.println("Fuel Type : " + fuelType);
     }
 }
+// Extended car class
 class Car extends Vehicle {
     int seatCapacity;
 
@@ -27,6 +29,7 @@ class Car extends Vehicle {
         System.out.println("Seat Capacity : " + seatCapacity);
     }
 }
+// Extended truck class
 class Truck extends Vehicle {
     double loadCapacity;
 
@@ -42,6 +45,7 @@ class Truck extends Vehicle {
         System.out.println("Load Capacity : " + loadCapacity + " tons");
     }
 }
+// Extended motorcycle class
 class Motorcycle extends Vehicle {
     int engineCapacity;
 
@@ -57,6 +61,7 @@ class Motorcycle extends Vehicle {
         System.out.println("Engine Capacity : " + engineCapacity + " cc");
     }
 }
+// Created a main class called transport system
 public class TransportSystem {
     public static void main(String[] args) {
 
@@ -66,7 +71,7 @@ public class TransportSystem {
         int n = sc.nextInt();
 
         Vehicle[] vehicles = new Vehicle[n];
-
+        // Looping to get information
         for (int i = 0; i < n; i++) {
             System.out.println("\nSelect Vehicle Type:");
             System.out.println("1. Car");
@@ -106,7 +111,7 @@ public class TransportSystem {
                     i--;
             }
         }
-
+        // Calling method
         System.out.println("\n--- Vehicle Details ---");
         for (Vehicle v : vehicles) {
             v.displayInfo();
