@@ -1,1 +1,6 @@
-Java Day Log Training 
+**Java Day Log Training **
+
+READ ME
+
+
+
