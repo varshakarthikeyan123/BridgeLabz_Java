@@ -44,4 +44,5 @@ README File
 
 • 15-Jan-2026 (Thursday): Completed Control Flow Level 3 programs. Practiced Arrays and solved array-based problems.
 
-• 16-Jan-2026 (Friday): Completed Methods and String programs. Learned Git and Git Flow process, branch creation, publishing, and daily workflow management.
+• 16-Jan-2026 (Friday): Completed Methods and String programs. Learned Git and Git Flow process, branch creation, publishing, and daily workflow management. Reorder Git Repo using Git Flow.
+
