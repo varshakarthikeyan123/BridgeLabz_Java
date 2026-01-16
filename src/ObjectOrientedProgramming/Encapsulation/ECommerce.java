@@ -87,7 +87,7 @@ class Groceries extends Product {
         return getPrice() * 0.05;
     }
 }
-// Creating a Main class named ECommerce
+// Creating a Main class named ECommerce title
 public class ECommerce {
     // Creating a method for printing final price
     public static void printFinalPrice(Product product) {
