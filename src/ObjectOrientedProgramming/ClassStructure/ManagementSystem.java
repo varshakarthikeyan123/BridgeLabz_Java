@@ -1,3 +1,8 @@
+/* This program creates three classes: Learner, Instructor, and Subject.
+   Each class stores information about the learner, instructor, and subject.
+   The main class, ManagementSystem, uses objects of each class,
+   accesses their variables and methods, and displays the results. */
+
 package ClassSequenceDiagram;
 import java.util.ArrayList;
 import java.util.Scanner;
