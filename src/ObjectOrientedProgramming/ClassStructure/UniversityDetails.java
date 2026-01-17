@@ -1,3 +1,6 @@
+/* This pregrame has three classes faculty, department and university. Each class has its own defined variables and methods which is used to prform certain 
+    functions. The main class named university details creats specific objects for each class so that the class variables can be accessed and results 
+    can be displayed */
 package ClassSequenceDiagram;
 import java.util.ArrayList;
 import java.util.Scanner;
