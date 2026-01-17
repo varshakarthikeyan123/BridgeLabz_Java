@@ -1,3 +1,8 @@
+/* This program creates three classes: Patient, Doctor, and Hospital.
+   Each class stores the name and relevant details of the patient, doctor, and hospital respectively.
+   The main class, HospitalFiles, inherits variables and methods from these classes
+   and displays the final results. */
+
 package ClassSequenceDiagram;
 import java.util.ArrayList;
 import java.util.Scanner;
