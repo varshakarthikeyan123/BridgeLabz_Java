@@ -1,3 +1,10 @@
+/* This program creates three classes: Product, Order, and Customer.
+   The Product class stores product names and prices.
+   The Order class manages product lists and order IDs.
+   The Customer class stores customer names and their orders.
+   The main class, ECommerceSystem, connects all classes and executes
+   the required methods to generate the final output. */
+
 package ClassSequenceDiagram;
 import java.util.ArrayList;
 import java.util.Scanner;
