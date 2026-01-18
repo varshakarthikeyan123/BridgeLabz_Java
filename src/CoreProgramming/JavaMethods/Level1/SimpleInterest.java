@@ -1,3 +1,9 @@
+/*
+ This program calculates Simple Interest using the formula:
+ Simple Interest = (Principal × Rate × Time) / 100.
+ It takes user input for principal amount, rate of interest, and time period,
+ then displays the calculated simple interest.
+*/
 package CoreProgramming.JavaMethods.Level1;
 
 import java.util.Scanner;
@@ -9,31 +15,31 @@ public class SimpleInterest {
     public static double interest(double principle, double rate, double time) {
 
         double SI = (principle * rate * time) / 100;
-        // Formula to calculate Simple Interest
+        // Calculating simple interest using the standard formula
 
         return SI;
-        // Returning calculated simple interest
+        // Returning the calculated simple interest value
     }
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read user input
+        // Creating Scanner object to read input from the user
 
         System.out.print("Enter principle: ");
         double principle = input.nextDouble();
-        // Reading principal amount
+        // Reading the principal amount
 
         System.out.print("Enter rate: ");
         double rate = input.nextDouble();
-        // Reading rate of interest
+        // Reading the rate of interest
 
         System.out.print("Enter time: ");
         double time = input.nextDouble();
-        // Reading time period
+        // Reading the time period
 
         double simpleInterest = interest(principle, rate, time);
-        // Calling interest method to calculate simple interest
+        // Calling the interest method to calculate simple interest
 
         System.out.println(
                 "The simple interest is " + simpleInterest +
@@ -41,6 +47,6 @@ public class SimpleInterest {
                         " rate of interest " + rate +
                         " and time " + time
         );
-        // Printing the calculated simple interest
+        // Displaying the calculated simple interest with input details
     }
 }

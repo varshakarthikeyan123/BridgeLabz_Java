@@ -1,3 +1,8 @@
+/*
+ This program finds the smallest and largest numbers among three integers.
+ It uses a separate method to compare the values and returns the result
+ as an array containing the smallest and largest numbers.
+*/
 package CoreProgramming.JavaMethods.Level1;
 
 import java.util.Scanner;
@@ -9,33 +14,33 @@ public class SmallestAndLargest {
     public static int[] findSmallestAndLargest(int num1, int num2, int num3) {
 
         int smallest = num1;
-        // Assume first number is the smallest initially
+        // Assuming the first number is the smallest initially
 
         int largest = num1;
-        // Assume first number is the largest initially
+        // Assuming the first number is the largest initially
 
-        // Compare second number with current smallest
         if (num2 < smallest) {
             smallest = num2;
+            // Updating smallest if second number is smaller
         }
 
-        // Compare third number with current smallest
         if (num3 < smallest) {
             smallest = num3;
+            // Updating smallest if third number is smaller
         }
 
-        // Compare second number with current largest
         if (num2 > largest) {
             largest = num2;
+            // Updating largest if second number is larger
         }
 
-        // Compare third number with current largest
         if (num3 > largest) {
             largest = num3;
+            // Updating largest if third number is larger
         }
 
-        // Return smallest and largest as an array
         return new int[]{smallest, largest};
+        // Returning smallest and largest values as an array
     }
 
     public static void main(String[] args) {
@@ -45,23 +50,23 @@ public class SmallestAndLargest {
 
         System.out.print("Enter number 1: ");
         int num1 = input.nextInt();
-        // Reading first number
+        // Reading the first number
 
         System.out.print("Enter number 2: ");
         int num2 = input.nextInt();
-        // Reading second number
+        // Reading the second number
 
         System.out.print("Enter number 3: ");
         int num3 = input.nextInt();
-        // Reading third number
+        // Reading the third number
 
         int[] result = findSmallestAndLargest(num1, num2, num3);
-        // Calling method to find smallest and largest
+        // Calling method to find smallest and largest numbers
 
         System.out.println(
                 "The largest number and smallest number are: "
                         + result[1] + " and " + result[0]
         );
-        // Printing largest and smallest values
+        // Displaying the largest and smallest numbers
     }
 }

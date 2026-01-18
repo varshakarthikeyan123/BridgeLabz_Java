@@ -1,17 +1,22 @@
+/*
+ This program generates random marks for students,
+ calculates total, average, and percentage,
+ and displays a formatted scorecard.
+*/
 package CoreProgramming.JavaMethods.Level3;
 
 import java.util.Random;
 
 public class StudentGrade {
 
-    // Generates random marks for each student in Physics, Chemistry, and Math
+    // Method to generate random scores for Physics, Chemistry, and Math
     public static int[][] generateScores(int numStudents) {
         Random rand = new Random();
         int[][] scores = new int[numStudents][3];
-        // [][0] = Physics, [][1] = Chemistry, [][2] = Math
+        // scores[i][0] -> Physics, scores[i][1] -> Chemistry, scores[i][2] -> Math
 
         for (int i = 0; i < numStudents; i++) {
-            // Random marks between 50 and 100
+            // Generating random marks between 50 and 100 for each subject
             scores[i][0] = rand.nextInt(51) + 50;
             scores[i][1] = rand.nextInt(51) + 50;
             scores[i][2] = rand.nextInt(51) + 50;
@@ -19,27 +24,28 @@ public class StudentGrade {
         return scores;
     }
 
-    // Calculates total, average, and percentage for each student
+    // Method to calculate total, average, and percentage
     public static double[][] calculateTotalAveragePercentage(int[][] scores) {
         int numStudents = scores.length;
         double[][] results = new double[numStudents][3];
-        // [][0] = Total, [][1] = Average, [][2] = Percentage
+        // results[i][0] -> Total, results[i][1] -> Average, results[i][2] -> Percentage
 
         for (int i = 0; i < numStudents; i++) {
-            // Sum of all three subject marks
+
+            // Calculating total marks
             int total = scores[i][0] + scores[i][1] + scores[i][2];
 
-            // Average marks
+            // Calculating average
             double average = total / 3.0;
 
-            // Percentage calculation out of 300
+            // Calculating percentage out of 300
             double percentage = (total / 300.0) * 100;
 
-            // Rounding average and percentage to 2 decimal places
+            // Rounding values to 2 decimal places
             average = Math.round(average * 100.0) / 100.0;
             percentage = Math.round(percentage * 100.0) / 100.0;
 
-            // Storing computed values
+            // Storing results
             results[i][0] = total;
             results[i][1] = average;
             results[i][2] = percentage;
@@ -47,8 +53,9 @@ public class StudentGrade {
         return results;
     }
 
-    // Displays marks along with total, average, and percentage
+    // Method to display student marks and results
     public static void displayScorecard(int[][] scores, double[][] results) {
+
         System.out.println("Student\tPhysics\tChemistry\tMath\tTotal\tAverage\tPercentage");
 
         for (int i = 0; i < scores.length; i++) {
@@ -64,15 +71,16 @@ public class StudentGrade {
     }
 
     public static void main(String[] args) {
-        int numStudents = 5; // Number of students
 
-        // Generate marks for students
+        int numStudents = 5; // Total number of students
+
+        // Generate student scores
         int[][] scores = generateScores(numStudents);
 
         // Calculate total, average, and percentage
         double[][] results = calculateTotalAveragePercentage(scores);
 
-        // Display final scorecard
+        // Display the final scorecard
         displayScorecard(scores, results);
     }
 }

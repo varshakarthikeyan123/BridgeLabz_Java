@@ -1,3 +1,8 @@
+/*
+ This program checks whether a given string is a Palindrome.
+ A palindrome is a word or phrase that reads the same
+ forward and backward (example: madam, level).
+*/
 package CoreProgramming.ExtrasBuiltIn;
 
 import java.util.Scanner;
@@ -9,29 +14,29 @@ public class Palindrome {
     public static boolean checkPalindrome(String text) {
 
         int start = 0;
-        // Pointer starting from the beginning of the string
+        // Pointer initialized to the beginning of the string
 
         int end = text.length() - 1;
-        // Pointer starting from the end of the string
+        // Pointer initialized to the end of the string
 
-        // Loop continues until both pointers meet
+        // Loop runs until the start pointer crosses the end pointer
         while (start < end) {
 
-            // If characters at start and end positions do not match,
-            // the string is not a palindrome
+            // Checking if characters at both ends are equal
             if (text.charAt(start) != text.charAt(end)) {
                 return false;
+                // Returning false if characters do not match
             }
 
             start++;
-            // Moving start pointer forward
+            // Moving the start pointer forward
 
             end--;
-            // Moving end pointer backward
+            // Moving the end pointer backward
         }
 
         return true;
-        // If all characters matched, the string is a palindrome
+        // Returning true if all character pairs match
     }
 
     public static void main(String[] args) {
@@ -41,17 +46,20 @@ public class Palindrome {
 
         System.out.print("Enter a string: ");
         String text = input.nextLine();
-        // Reading the string input
+        // Reading the input string from the user
 
         boolean check = checkPalindrome(text);
-        // Calling the palindrome check method
+        // Calling the palindrome checking method
 
-        // Displaying result based on returned value
+        // Checking the result and displaying output
         if (check) {
             System.out.println("The string is a palindrome.");
         }
         else {
             System.out.println("The string is not a palindrome.");
         }
+
+        input.close();
+        // Closing Scanner to release resources
     }
 }

@@ -1,4 +1,11 @@
+/*
+ This program reverses a given string.
+ It reads a string from the user and prints it
+ in reverse order by looping from the last
+ character to the first.
+*/
 package CoreProgramming.Extras;
+// Package declaration
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user
@@ -16,7 +23,7 @@ public class ReverseString {
         // Loop starts from the last character and moves to the first
         for (int i = text.length() - 1; i >= 0; i--) {
 
-            // Printing characters in reverse order
+            // Printing each character in reverse order
             System.out.print(text.charAt(i));
         }
     }

@@ -1,3 +1,9 @@
+/*
+ This program finds the frequency of each digit in a given number.
+ It extracts digits, stores them in an array, counts how many times
+ each digit (0–9) appears, and displays the frequency result.
+*/
+
 package CoreProgramming.ArrayPractice.Level2;
 
 import java.util.Scanner;

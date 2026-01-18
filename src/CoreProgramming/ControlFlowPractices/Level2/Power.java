@@ -1,3 +1,8 @@
+/*
+ This program calculates the power of a given number.
+ It takes a base number and an exponent from the user
+ and computes the result using a loop.
+*/
 package CoreProgramming.ControlFlowPractices.Level2;
 
 import java.util.Scanner;
@@ -25,16 +30,16 @@ public class Power {
         }
 
         int result = 1;
-        // Variable to store the result of power calculation
-        // Initialized to 1 because any number power 0 equals 1
+        // Variable to store the final power result
+        // Initialized to 1 because any number raised to power 0 is 1
 
         // Loop to calculate number raised to the given power
         for (int i = 1; i <= power; i++) {
             result = number * result;
-            // Multiplying number repeatedly to calculate power
+            // Multiplying the base number repeatedly
         }
 
         System.out.println(result);
-        // Printing the final power result
+        // Displaying the calculated power result
     }
 }

@@ -11,8 +11,8 @@ public class SumOfNaturalNumbers {
         int sum = 0;
         // Variable to store the sum
 
-        // Loop from 0 to N to add all natural numbers
-        for (int i = 0; i <= N; i++) {
+        // Loop to add all natural numbers from 1 to N
+        for (int i = 1; i <= N; i++) {
             sum = sum + i;
         }
 
@@ -32,7 +32,7 @@ public class SumOfNaturalNumbers {
         int sumNumber = naturalSum(N);
         // Calling method to calculate sum of natural numbers
 
-        System.out.println("The sum of " + N + " natural number is: " + sumNumber);
+        System.out.println("The sum of " + N + " natural numbers is: " + sumNumber);
         // Printing the result
     }
 }

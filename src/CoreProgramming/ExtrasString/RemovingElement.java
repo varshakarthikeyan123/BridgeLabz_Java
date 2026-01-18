@@ -1,38 +1,70 @@
+/*
+ This program checks whether a given string is a palindrome.
+ A palindrome is a string that reads the same forwards and backwards.
+ The program uses two pointers (start and end) to compare characters
+ from both ends of the string until they meet in the middle.
+*/
 package CoreProgramming.Extras;
+// Package declaration that groups this class under CoreProgramming.Extras
 
 import java.util.Scanner;
-// Scanner class is used to take input from the user
+// Importing Scanner class to take input from the user
 
-public class RemovingElement {
-    public static void main(String[] args) {
+public class Palindrome {
+    // Class definition for Palindrome checking logic
 
-        Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read user input
+    // Method to check whether the given string is a palindrome
+    public static boolean checkPalindrome(String text) {
 
-        System.out.print("Enter a string: ");
-        String text = input.nextLine();
-        // Reading the input string
+        int start = 0;
+        // Initializing start index at the beginning of the string
 
-        System.out.print("Enter a character to remove: ");
-        char character = input.next().charAt(0);
-        // Reading the character to be removed
+        int end = text.length() - 1;
+        // Initializing end index at the last character of the string
 
-        String result = "";
-        // This string will store the final result after removal
+        // Loop continues until start index is less than end index
+        while (start < end) {
 
-        // Loop through each character of the string
-        for (int i = 0; i < text.length(); i++) {
-
-            char ch = text.charAt(i);
-            // Current character in the string
-
-            // Add character to result only if it does not match the given character
-            if (ch != character) {
-                result += text.charAt(i);
+            // Checking if characters at start and end positions are different
+            if (text.charAt(start) != text.charAt(end)) {
+                return false;
+                // Returning false immediately if mismatch is found
             }
+
+            start++;
+            // Incrementing start index to move forward
+
+            end--;
+            // Decrementing end index to move backward
         }
 
-        // Printing the final string after removal
-        System.out.println(result);
+        return true;
+        // Returning true if all character comparisons match
+    }
+
+    public static void main(String[] args) {
+        // Main method where program execution begins
+
+        Scanner input = new Scanner(System.in);
+        // Creating Scanner object to read user input from console
+
+        System.out.print("Enter a string: ");
+        // Prompting the user to enter a string
+
+        String text = input.nextLine();
+        // Reading the entered string
+
+        boolean check = checkPalindrome(text);
+        // Calling the palindrome checking method and storing the result
+
+        // Checking the returned result and printing appropriate message
+        if (check) {
+            System.out.println("The string is a palindrome.");
+            // Printed when the string is a palindrome
+        }
+        else {
+            System.out.println("The string is not a palindrome.");
+            // Printed when the string is not a palindrome
+        }
     }
 }

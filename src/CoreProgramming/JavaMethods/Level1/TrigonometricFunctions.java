@@ -3,25 +3,21 @@ package CoreProgramming.JavaMethods.Level1;
 import java.util.Scanner;
 // Scanner class is used to take input from the user
 
-public class TrigonometricFunctions {
+public class SumOfNaturalNumbers {
 
-    // Method to calculate sine, cosine, and tangent of an angle
-    public static double[] calculateTrigonometricFunctions(double angle) {
+    // Method to calculate the sum of first N natural numbers
+    public static int naturalSum(int N) {
 
-        double rad = Math.toRadians(angle);
-        // Converting angle from degrees to radians
+        int sum = 0;
+        // Variable to store the sum
 
-        double sine = Math.sin(rad);
-        // Calculating sine of the angle
+        // Loop to add all natural numbers from 1 to N
+        for (int i = 1; i <= N; i++) {
+            sum = sum + i;
+        }
 
-        double cosine = Math.cos(rad);
-        // Calculating cosine of the angle
-
-        double tangent = Math.tan(rad);
-        // Calculating tangent of the angle
-
-        return new double[]{sine, cosine, tangent};
-        // Returning sine, cosine, and tangent as an array
+        return sum;
+        // Returning the calculated sum
     }
 
     public static void main(String[] args) {
@@ -29,20 +25,14 @@ public class TrigonometricFunctions {
         Scanner input = new Scanner(System.in);
         // Creating Scanner object to read user input
 
-        System.out.print("Enter angle in degrees: ");
-        double angle = input.nextDouble();
-        // Reading angle in degrees
+        System.out.print("Enter number: ");
+        int N = input.nextInt();
+        // Reading the number N
 
-        double[] result = calculateTrigonometricFunctions(angle);
-        // Calling method to calculate trigonometric values
+        int sumNumber = naturalSum(N);
+        // Calling method to calculate sum of natural numbers
 
-        System.out.println("The sine angle: " + result[0]);
-        // Printing sine value
-
-        System.out.println("The cosine angle: " + result[1]);
-        // Printing cosine value
-
-        System.out.println("The tangent angle: " + result[2]);
-        // Printing tangent value
+        System.out.println("The sum of " + N + " natural numbers is: " + sumNumber);
+        // Printing the result
     }
 }

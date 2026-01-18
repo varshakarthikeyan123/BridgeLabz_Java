@@ -1,42 +1,41 @@
-package CoreProgramming.Extras;
+/*
+ This program toggles the case of each character in a given string.
+ Lowercase letters are converted to uppercase, uppercase letters are
+ converted to lowercase, and non-alphabet characters remain unchanged.
+*/
+package CoreProgramming.Extras; // Defines the package name for this program
 
-import java.util.Scanner;
-// Scanner class is used to take input from the user
+import java.util.Scanner; // Imports Scanner class to take input from the user
 
-public class ToggleCase {
-    public static void main(String[] args) {
+public class ToggleCase { // Class definition
+    public static void main(String[] args) { // Main method where execution starts
 
-        Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read user input
+        Scanner input = new Scanner(System.in); // Creates Scanner object for input
 
-        System.out.print("Enter a string: ");
-        String text = input.nextLine();
-        // Reading the input string
+        System.out.print("Enter a string: "); // Prompts the user to enter a string
+        String text = input.nextLine(); // Reads the input string
 
-        String result = "";
-        // This string will store the final toggled result
+        String result = ""; // Stores the final string after toggling cases
 
-        // Loop through each character in the string
-        for (int i = 0; i < text.length(); i++) {
+        // Loop through each character in the input string
+        for (int i = 0; i < text.length(); i++) { // Iterates over the string characters
 
-            char ch = text.charAt(i);
-            // Current character from the string
+            char ch = text.charAt(i); // Gets the current character
 
-            // If character is lowercase, convert it to uppercase
+            // Checks if the character is lowercase
             if (ch >= 'a' && ch <= 'z') {
-                result += (char) (ch - 32);
+                result += (char) (ch - 32); // Converts lowercase to uppercase
             }
-            // If character is uppercase, convert it to lowercase
+            // Checks if the character is uppercase
             else if (ch >= 'A' && ch <= 'Z') {
-                result += (char) (ch + 32);
+                result += (char) (ch + 32); // Converts uppercase to lowercase
             }
-            // If character is not an alphabet, keep it unchanged
+            // Handles non-alphabet characters
             else {
-                result += ch;
+                result += ch; // Adds the character as it is
             }
         }
 
-        // Printing the toggled case string
-        System.out.println("The toggled cases are: " + result);
+        System.out.println("The toggled cases are: " + result); // Prints the toggled string
     }
 }

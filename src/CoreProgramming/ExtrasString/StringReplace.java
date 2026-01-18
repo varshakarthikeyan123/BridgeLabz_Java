@@ -1,4 +1,10 @@
+/*
+ This program replaces a specific word in a sentence.
+ It reads a sentence, the word to be replaced,
+ and the new word, then prints the modified sentence.
+*/
 package CoreProgramming.Extras;
+// Package declaration
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user
@@ -12,20 +18,18 @@ public class StringReplace {
         // Stores the final modified sentence
 
         String word = "";
-        // Temporarily stores each word while traversing the sentence
+        // Temporarily stores each word
 
         // Loop through each character in the sentence
         for (int i = 0; i < sentence.length(); i++) {
 
             char ch = sentence.charAt(i);
-            // Current character
 
-            // Build the word character by character until space is found
             if (ch != ' ') {
                 word += ch;
-            }
-            else {
-                // If the word matches the old word, replace it
+                // Building the word
+            } else {
+                // Replace word if it matches oldWord
                 if (word.equals(oldWord)) {
                     result += newWord;
                 } else {
@@ -36,11 +40,11 @@ public class StringReplace {
                 // Add space after each word
 
                 word = "";
-                // Reset word for next iteration
+                // Reset word
             }
         }
 
-        // Handling the last word in the sentence
+        // Handling the last word
         if (word.equals(oldWord)) {
             result += newWord;
         } else {
@@ -48,30 +52,29 @@ public class StringReplace {
         }
 
         return result;
-        // Returning the modified sentence
     }
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read input
+        // Creating Scanner object
 
         System.out.print("Enter a sentence: ");
         String sentence = input.nextLine();
-        // Reading the sentence
+        // Reading sentence
 
         System.out.print("Enter the word to replace: ");
         String oldWord = input.next();
-        // Reading the word to be replaced
+        // Reading old word
 
         System.out.print("Enter the new word: ");
         String newWord = input.next();
-        // Reading the replacement word
+        // Reading new word
 
         String replacedSentence = replaceWord(sentence, oldWord, newWord);
-        // Calling replaceWord method
+        // Calling replace method
 
         System.out.println("Modified sentence: " + replacedSentence);
-        // Printing the modified sentence
+        // Displaying result
     }
 }

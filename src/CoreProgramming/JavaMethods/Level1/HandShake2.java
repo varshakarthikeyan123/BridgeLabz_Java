@@ -1,3 +1,8 @@
+/*
+ This program calculates the total number of possible handshakes
+ among a given number of students using the combination formula nC2.
+ It uses a separate method to perform the calculation.
+*/
 package CoreProgramming.JavaMethods.Level1;
 
 import java.util.Scanner;
@@ -9,7 +14,7 @@ public class HandShake2 {
     public static float handShake(int n) {
 
         float combination = (n * (n - 1)) / 2;
-        // Using combination formula nC2 to calculate handshakes
+        // Using combination formula nC2
 
         return combination;
         // Returning total number of handshakes
@@ -28,6 +33,6 @@ public class HandShake2 {
         // Calling handShake method
 
         System.out.println("The number of possible handshakes is: " + handShakes);
-        // Printing the result
+        // Displaying the result
     }
 }

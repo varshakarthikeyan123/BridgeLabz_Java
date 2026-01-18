@@ -1,3 +1,7 @@
+/*
+ This program finds how many times a substring
+ occurs within a given string.
+*/
 package CoreProgramming.Extras;
 
 import java.util.Scanner;
@@ -21,19 +25,16 @@ public class Substring {
         // Variable to count occurrences of the substring
 
         int index = 0;
-        // Index to track current search position in the string
+        // Index to track the current position in the string
 
-        // Loop to find all occurrences of substring
+        // Loop to find all occurrences of the substring
         while ((index = text.indexOf(substring, index)) != -1) {
-
             count++;
-            // Increment count when substring is found
-
             index += substring.length();
-            // Move index forward to continue searching after current match
+            // Move index forward after each match
         }
 
-        // Printing the total number of occurrences
+        // Displaying the result
         System.out.println("Occurrence of substring: " + count);
     }
 }

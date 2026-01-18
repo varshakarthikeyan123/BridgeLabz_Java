@@ -1,10 +1,19 @@
+/*
+ This program checks whether a given number is a Prime number.
+ A prime number is a number greater than 1 that has no divisors
+ other than 1 and itself.
+*/
 package CoreProgramming.ControlFlowPractices.Level3;
+// Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user
 
 public class PrimeNumber {
+    // Main class definition
+
     public static void main(String[] args) {
+        // Main method where program execution starts
 
         Scanner input = new Scanner(System.in);
         // Creating Scanner object to read user input
@@ -14,7 +23,7 @@ public class PrimeNumber {
         // Reading the number to be checked
 
         boolean isPrime = true;
-        // Flag variable to assume the number is prime initially
+        // Flag variable assuming the number is prime initially
 
         // Numbers less than or equal to 1 are not prime
         if (number <= 1) {
@@ -28,7 +37,7 @@ public class PrimeNumber {
                 if (number % i == 0) {
                     isPrime = false;
                     break;
-                    // Exit loop as factor is found
+                    // Exit loop as a divisor is found
                 }
             }
         }

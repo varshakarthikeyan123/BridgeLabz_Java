@@ -1,96 +1,88 @@
-package CoreProgramming.ArrayPractice.Level2;
+/*
+ This program calculates BMI using a 2D array.
+ It stores weight, height, and BMI for multiple persons,
+ validates input values, determines BMI category,
+ and displays the result in a tabular format.
+*/
+package CoreProgramming.ArrayPractice.Level2; // Package for Level 2 array practice programs
 
-import java.util.Scanner;
-// Scanner class is used to take input from the user
+import java.util.Scanner; // Scanner class is used to take input from the user
 
-public class BMI2D {
-    public static void main(String[] args) {
+public class BMI2D { // Main class definition
+    public static void main(String[] args) { // Main method where execution starts
 
-        Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read user input
+        Scanner input = new Scanner(System.in); // Creating Scanner object to read user input
 
-        System.out.print("Enter number of persons: ");
-        int number = input.nextInt();
-        // Reading the number of persons
+        System.out.print("Enter number of persons: "); // Prompts user for number of persons
+        int number = input.nextInt(); // Reads the number of persons
 
-        double[][] personData = new double[number][3];
-        // 2D array to store person data
-        // Column 0 → Weight
-        // Column 1 → Height
-        // Column 2 → BMI
+        double[][] personData = new double[number][3]; // 2D array to store weight, height, and BMI
+        // Index [i][0] -> weight, [i][1] -> height, [i][2] -> BMI
 
-        String[] weightStatus = new String[number];
-        // Array to store BMI category for each person
+        String[] weightStatus = new String[number]; // Array to store BMI category for each person
 
-        // Loop to take weight and height for each person
-        for (int i = 0; i < number; i++) {
+        // Loop to take weight and height input for each person
+        for (int i = 0; i < number; i++) { // Iterates through each person
 
-            System.out.println("\nEnter details for person " + (i + 1));
+            System.out.println("\nEnter details for person " + (i + 1)); // Displays person number
 
             // Loop to validate weight input
-            while (true) {
-                System.out.print("Enter weight (kg): ");
-                personData[i][0] = input.nextDouble();
+            while (true) { // Repeats until valid weight is entered
+                System.out.print("Enter weight (kg): "); // Prompts for weight
+                personData[i][0] = input.nextDouble(); // Stores weight value
 
-                // Weight must be a positive value
-                if (personData[i][0] > 0) {
-                    break;
+                if (personData[i][0] > 0) { // Checks if weight is positive
+                    break; // Exits loop if valid
                 }
-                System.out.println("Invalid weight! Enter a positive value.");
+                System.out.println("Invalid weight! Enter a positive value."); // Error message
             }
 
             // Loop to validate height input
-            while (true) {
-                System.out.print("Enter height (meters): ");
-                personData[i][1] = input.nextDouble();
+            while (true) { // Repeats until valid height is entered
+                System.out.print("Enter height (meters): "); // Prompts for height
+                personData[i][1] = input.nextDouble(); // Stores height value
 
-                // Height must be a positive value
-                if (personData[i][1] > 0) {
-                    break;
+                if (personData[i][1] > 0) { // Checks if height is positive
+                    break; // Exits loop if valid
                 }
-                System.out.println("Invalid height! Enter a positive value.");
+                System.out.println("Invalid height! Enter a positive value."); // Error message
             }
         }
 
         // Loop to calculate BMI and determine weight status
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i < number; i++) { // Iterates through each person
 
-            double weight = personData[i][0];
-            // Extracting weight
+            double weight = personData[i][0]; // Retrieves weight value
+            double height = personData[i][1]; // Retrieves height value
 
-            double height = personData[i][1];
-            // Extracting height
+            personData[i][2] = weight / (height * height); // Calculates BMI
 
-            personData[i][2] = weight / (height * height);
-            // Calculating BMI using formula: weight / (height²)
-
-            // Determining BMI category
-            if (personData[i][2] < 18.5) {
-                weightStatus[i] = "Underweight";
+            // Determines BMI category
+            if (personData[i][2] < 18.5) { // Checks underweight range
+                weightStatus[i] = "Underweight"; // Assigns category
             }
-            else if (personData[i][2] <= 24.9) {
-                weightStatus[i] = "Normal weight";
+            else if (personData[i][2] <= 24.9) { // Checks normal range
+                weightStatus[i] = "Normal weight"; // Assigns category
             }
-            else if (personData[i][2] <= 29.9) {
-                weightStatus[i] = "Overweight";
+            else if (personData[i][2] <= 29.9) { // Checks overweight range
+                weightStatus[i] = "Overweight"; // Assigns category
             }
-            else {
-                weightStatus[i] = "Obese";
+            else { // Executes if BMI is above 29.9
+                weightStatus[i] = "Obese"; // Assigns obese category
             }
         }
 
-        System.out.println("\nHeight\tWeight\tBMI\t\tStatus");
+        System.out.println("\nHeight\tWeight\tBMI\t\tStatus"); // Prints table header
 
-        // Loop to display the final result in tabular format
-        for (int i = 0; i < number; i++) {
+        // Loop to display final BMI report
+        for (int i = 0; i < number; i++) { // Iterates through each person
             System.out.printf("%.2f\t%.2f\t%.2f\t%s%n",
-                    personData[i][1],  // Height
-                    personData[i][0],  // Weight
-                    personData[i][2],  // BMI
-                    weightStatus[i]);  // BMI Category
+                    personData[i][1], // Displays height
+                    personData[i][0], // Displays weight
+                    personData[i][2], // Displays BMI
+                    weightStatus[i]); // Displays BMI category
         }
 
-        input.close();
-        // Closing Scanner to release resources
+        input.close(); // Closes Scanner to release resources
     }
 }

@@ -1,3 +1,7 @@
+/*
+ This program checks whether a given date (month and day)
+ falls under the Spring season based on predefined date ranges.
+*/
 package CoreProgramming.JavaMethods.Level1;
 
 import java.util.Scanner;
@@ -8,32 +12,32 @@ public class Season {
     // Method to check whether the given date falls in Spring season
     public static boolean isSpring(int month, int day) {
 
-        // Spring months are from March (3) to June (6)
+        // Checking if month is outside the Spring range (March to June)
         if (month < 3 || month > 6) {
             return false;
         }
 
-        // Spring starts from March 20 to March 31
+        // Checking Spring range for March (March 20 to March 31)
         if (month == 3 && day >= 20 && day <= 31) {
             return true;
         }
 
-        // Entire month of April is Spring
+        // Checking Spring range for April (entire month)
         if (month == 4 && day >= 1 && day <= 30) {
             return true;
         }
 
-        // Entire month of May is Spring
+        // Checking Spring range for May (entire month)
         if (month == 5 && day >= 1 && day <= 31) {
             return true;
         }
 
-        // Spring ends on June 20
+        // Checking Spring range for June (June 1 to June 20)
         if (month == 6 && day >= 1 && day <= 20) {
             return true;
         }
 
-        // All other dates are not Spring
+        // Returning false if none of the Spring conditions are met
         return false;
     }
 
@@ -44,13 +48,13 @@ public class Season {
 
         System.out.print("Enter month (1-12): ");
         int month = sc.nextInt();
-        // Reading month input
+        // Reading the month value from the user
 
         System.out.print("Enter day: ");
         int day = sc.nextInt();
-        // Reading day input
+        // Reading the day value from the user
 
-        // Checking season using isSpring method
+        // Checking if the given date falls in Spring season
         if (isSpring(month, day)) {
             System.out.println("It's a Spring Season");
         } else {

@@ -1,3 +1,8 @@
+/*
+ This program is a simple Number Guessing Game.
+ The computer guesses a number using binary search logic,
+ and the user guides it by giving feedback.
+*/
 package CoreProgramming.ExtrasBuiltIn;
 
 import java.util.Scanner;
@@ -10,57 +15,59 @@ public class NumberGame {
         // Creating Scanner object to read user input
 
         System.out.println("Think of a number between 1 and 100.");
-        System.out.println("Press Enter when you're ready: ");
+        System.out.println("Press Enter when you're ready:");
         scanner.nextLine();
-        // Waiting for the user to press Enter before starting the game
+        // Waiting for user to start the game
 
         int low = 1;
-        // Lower bound of the guessing range
+        // Lower bound of guessing range
 
         int high = 100;
-        // Upper bound of the guessing range
+        // Upper bound of guessing range
 
         boolean correct = false;
-        // Flag to track whether the correct number is guessed
+        // Flag to track if the correct number is guessed
 
-        // Loop continues until the correct number is found or range becomes invalid
+        // Loop continues until the correct number is found
         while (!correct && low <= high) {
 
             int guess = (low + high) / 2;
-            // Computer makes a guess using binary search logic
+            // Computer guesses the middle number (binary search)
 
-            System.out.println("Is your number " + guess + "? (high/low/correct): ");
+            System.out.print("Is your number " + guess + "? (high / low / correct): ");
             String feedback = scanner.nextLine().toLowerCase();
-            // Reading user feedback and converting it to lowercase
+            // Reading user feedback
 
-            // Adjusting search range based on user feedback
             switch (feedback) {
 
                 case "high":
                     high = guess - 1;
-                    // If guess is too high, reduce the upper limit
+                    // Guess is too high
                     break;
 
                 case "low":
                     low = guess + 1;
-                    // If guess is too low, increase the lower limit
+                    // Guess is too low
                     break;
 
                 case "correct":
                     System.out.println("Yay! I guessed your number " + guess + "!");
                     correct = true;
-                    // Setting flag to true when the correct number is guessed
+                    // Correct guess found
                     break;
 
                 default:
-                    System.out.println("Invalid input. Please type 'high', 'low', or 'correct'.");
-                    // Handling invalid user input
+                    System.out.println("Invalid input. Please type high, low, or correct.");
+                    // Handling invalid input
             }
         }
 
-        // This message appears if the loop ends without correct feedback
+        // If loop ends without a correct answer
         if (!correct) {
-            System.out.println("Please provide proper feedback");
+            System.out.println("Please provide proper feedback.");
         }
+
+        scanner.close();
+        // Closing scanner
     }
 }

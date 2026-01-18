@@ -1,3 +1,8 @@
+/*
+ This program checks and prints whether numbers from 1 to a given number
+ are odd or even.
+ It also counts how many even and odd numbers are present.
+*/
 package CoreProgramming.ControlFlowPractices.Level2;
 
 import java.util.Scanner;
@@ -21,32 +26,38 @@ public class OddEven {
         }
 
         int countEven = 0;
-        // Variable to count how many even numbers are found
+        // Variable to count the number of even values
 
         int countOdd = 0;
-        // Variable to count how many odd numbers are found
+        // Variable to count the number of odd values
 
         // Loop from 1 to the entered number
         for (int i = 1; i <= number; i++) {
 
-            // Checking whether the current number is even
+            // Checking if the current number is even
             if (i % 2 == 0) {
                 System.out.println(i + " Even");
+                // Printing even number
+
                 countEven++;
-                // Incrementing even count
+                // Incrementing even counter
             }
-            // If the number is not even, it must be odd
+            // If not even, then the number is odd
             else {
                 System.out.println(i + " Odd");
+                // Printing odd number
+
                 countOdd++;
-                // Incrementing odd count
+                // Incrementing odd counter
             }
         }
 
         System.out.println("The count of even numbers found in number from 1 to "
                 + number + " are: " + countEven);
+        // Displaying total count of even numbers
 
         System.out.println("The count of odd numbers found in number from 1 to "
                 + number + " are: " + countOdd);
+        // Displaying total count of odd numbers
     }
 }

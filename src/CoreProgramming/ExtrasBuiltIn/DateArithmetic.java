@@ -1,74 +1,97 @@
+/*
+ This program performs date arithmetic operations in Java.
+ It takes a date as input and performs multiple operations:
+ adding days, adding months, adding years, and subtracting days.
+ It also correctly handles month transitions and leap years.
+*/
 package CoreProgramming.ExtrasBuiltIn;
+// Defines the package for extra built-in utility programs
 
 import java.util.Scanner;
-// Scanner class is used to take input from the user
+// Imports Scanner class to take input from the user
 
 public class DateArithmetic {
+    // Main class for performing date arithmetic
+
     public static void main(String[] args) {
+        // Main method where program execution starts
 
         Scanner scanner = new Scanner(System.in);
         // Creating Scanner object to read user input
 
         System.out.print("Enter day: ");
         int day = scanner.nextInt();
-        // Reading day
+        // Reading day value
 
         System.out.print("Enter month (1-12): ");
         int month = scanner.nextInt();
-        // Reading month
+        // Reading month value
 
         System.out.print("Enter year: ");
         int year = scanner.nextInt();
-        // Reading year
+        // Reading year value
 
-        // Step 1: Add 7 days to the current date
+        // Step 1: Add 7 days to the given date
         day += 7;
+        // Increasing day by 7
 
-        // Getting number of days in each month for the given year
         int[] daysInMonth = getDaysInMonth(year);
+        // Getting number of days in each month for the given year
 
-        // If days exceed the days in the current month, move to next month
         if (day > daysInMonth[month - 1]) {
+            // Checking if day exceeds the current month's limit
             day -= daysInMonth[month - 1];
+            // Adjusting day by subtracting current month days
             month++;
+            // Moving to the next month
         }
 
         // Step 2: Add 1 month
         month++;
+        // Incrementing month
+
         if (month > 12) {
+            // Checking if month exceeds December
             month = 1;
+            // Resetting month to January
             year++;
-            // If month exceeds December, reset month and increment year
+            // Incrementing year
         }
 
         // Step 3: Add 2 years
         year += 2;
+        // Increasing year by 2
 
-        // Step 4: Subtract 21 days from the date
+        // Step 4: Subtract 21 days
         day -= 21;
+        // Reducing day by 21
 
-        // If day becomes zero or negative, adjust month and year accordingly
         while (day <= 0) {
-            month--;
+            // Loop to handle negative or zero day values
 
-            // If month goes below January, move to previous year
+            month--;
+            // Moving to the previous month
+
             if (month <= 0) {
+                // If month goes before January
                 month = 12;
+                // Setting month to December
                 year--;
+                // Moving to previous year
             }
 
-            // Update days in month based on the new year
             daysInMonth = getDaysInMonth(year);
+            // Updating days in month for the new year
 
-            // Add days of the previous month to correct the date
             day += daysInMonth[month - 1];
+            // Adding days of the previous month to fix date
         }
 
-        // Displaying the final calculated date
         System.out.println("Final date: " + day + "/" + month + "/" + year);
+        // Displaying the final calculated date
 
         scanner.close();
-        // Closing the scanner
+        // Closing Scanner to free resources
     }
 
     // Method to return number of days in each month for a given year
@@ -88,11 +111,12 @@ public class DateArithmetic {
                 30, // November
                 31  // December
         };
+        // Initializing days for each month
 
-        // Checking for leap year to update February days
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            // Checking leap year condition
             daysInMonth[1] = 29;
-            // February has 29 days in a leap year
+            // Updating February days for leap year
         }
 
         return daysInMonth;

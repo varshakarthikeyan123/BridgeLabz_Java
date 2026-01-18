@@ -1,91 +1,70 @@
+/*
+ This program checks whether three given points are collinear.
+ Collinearity is verified using two methods:
+ 1) Slope (cross-multiplication) method
+ 2) Area of triangle method
+ The program takes coordinates of three points as input
+ and prints whether they lie on the same straight line.
+*/
 package CoreProgramming.JavaMethods.Level3;
 
-import java.util.Scanner;
+import java.util.Scanner; // Scanner class is used to take input from the user
 
-public class collinear {
+public class Collinear {
 
-    // Method to check collinearity using slope comparison
+    // Method to check collinearity using slope comparison (cross multiplication)
     public static boolean isCollinearBySlope(double x1, double y1,
                                              double x2, double y2,
                                              double x3, double y3) {
 
-        double slopeAB, slopeBC, slopeAC;
-
-        // Calculate slope between point A and B
-        // Handle vertical line case where division by zero can occur
-        if (x2 - x1 != 0) {
-            slopeAB = (y2 - y1) / (x2 - x1);
-        } else {
-            slopeAB = Double.POSITIVE_INFINITY;
-        }
-
-        // Calculate slope between point B and C
-        if (x3 - x2 != 0) {
-            slopeBC = (y3 - y2) / (x3 - x2);
-        } else {
-            slopeBC = Double.POSITIVE_INFINITY;
-        }
-
-        // Calculate slope between point A and C
-        if (x3 - x1 != 0) {
-            slopeAC = (y3 - y1) / (x3 - x1);
-        } else {
-            slopeAC = Double.POSITIVE_INFINITY;
-        }
-
-        // Points are collinear if all slopes are equal
-        return (slopeAB == slopeBC) && (slopeBC == slopeAC);
+        // Checking slope equality using cross multiplication to avoid division
+        return (y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1);
     }
 
-    // Method to check collinearity using area of triangle formula
+    // Method to check collinearity using area of triangle method
     public static boolean isCollinearByArea(double x1, double y1,
                                             double x2, double y2,
                                             double x3, double y3) {
 
-        // Calculate area of triangle formed by three points
-        double area = 0.5 * (x1 * (y2 - y3)
+        // Calculating area of triangle formed by three points
+        double area = x1 * (y2 - y3)
                 + x2 * (y3 - y1)
-                + x3 * (y1 - y2));
+                + x3 * (y1 - y2);
 
-        // If area is zero, points lie on the same straight line
-        return area == 0;
+        // If area is nearly zero, points are collinear
+        return Math.abs(area) < 1e-9;
     }
 
     public static void main(String[] args) {
 
-        // Scanner object for user input
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // Creating Scanner object
 
-        // Read coordinates of first point
-        System.out.print("Enter x1: ");
-        double x1 = input.nextDouble();
-        System.out.print("Enter y1: ");
-        double y1 = input.nextDouble();
+        System.out.print("Enter x1 y1: "); // Prompting user for first point
+        double x1 = input.nextDouble(); // Reading x-coordinate of first point
+        double y1 = input.nextDouble(); // Reading y-coordinate of first point
 
-        // Read coordinates of second point
-        System.out.print("Enter x2: ");
-        double x2 = input.nextDouble();
-        System.out.print("Enter y2: ");
-        double y2 = input.nextDouble();
+        System.out.print("Enter x2 y2: "); // Prompting user for second point
+        double x2 = input.nextDouble(); // Reading x-coordinate of second point
+        double y2 = input.nextDouble(); // Reading y-coordinate of second point
 
-        // Read coordinates of third point
-        System.out.print("Enter x3: ");
-        double x3 = input.nextDouble();
-        System.out.print("Enter y3: ");
-        double y3 = input.nextDouble();
+        System.out.print("Enter x3 y3: "); // Prompting user for third point
+        double x3 = input.nextDouble(); // Reading x-coordinate of third point
+        double y3 = input.nextDouble(); // Reading y-coordinate of third point
 
-        // Check collinearity using slope method
+        // Checking collinearity using slope method
         if (isCollinearBySlope(x1, y1, x2, y2, x3, y3)) {
-            System.out.println("The points are collinear (checked by slope).");
+            System.out.println("The points are collinear (Slope Method).");
         } else {
-            System.out.println("The points are NOT collinear (checked by slope).");
+            System.out.println("The points are NOT collinear (Slope Method).");
         }
 
-        // Check collinearity using area method
+        // Checking collinearity using area method
         if (isCollinearByArea(x1, y1, x2, y2, x3, y3)) {
-            System.out.println("The points are collinear (checked by area of triangle).");
+            System.out.println("The points are collinear (Area Method).");
         } else {
-            System.out.println("The points are NOT collinear (checked by area of triangle).");
+            System.out.println("The points are NOT collinear (Area Method).");
         }
+
+        input.close(); // Closing the Scanner to release resources
     }
 }

@@ -1,57 +1,93 @@
+/*
+ This program calculates the real roots of a quadratic equation
+ of the form ax² + bx + c = 0 using the quadratic formula.
+ It handles cases where there are two real roots, one real root,
+ or no real roots based on the discriminant value.
+*/
 package CoreProgramming.JavaMethods.Level2;
+// Package declaration for organizing JavaMethods Level 2 programs
 
 import java.util.Scanner;
 // Scanner is used to take input from the user
 
 public class QuadraticFormula {
+    // Class definition for solving quadratic equations
 
     // Method to calculate roots of a quadratic equation ax^2 + bx + c = 0
     public static double[] quadraticFormula(double a, double b, double c) {
 
-        // Calculate the discriminant (delta = b^2 - 4ac)
         double delta = Math.pow(b, 2) - 4 * a * c;
+        // Calculating the discriminant (b² − 4ac)
 
-        // If delta is positive, equation has two distinct real roots
         if (delta > 0) {
-            double root1 = (-b + Math.sqrt(delta)) / (2 * a); // First root
-            double root2 = (-b - Math.sqrt(delta)) / (2 * a); // Second root
-            return new double[]{root1, root2}; // Return both roots
+            // Condition when discriminant is positive (two real roots)
+
+            double root1 = (-b + Math.sqrt(delta)) / (2 * a);
+            // Calculating the first real root
+
+            double root2 = (-b - Math.sqrt(delta)) / (2 * a);
+            // Calculating the second real root
+
+            return new double[]{root1, root2};
+            // Returning both real roots
         }
-        // If delta is zero, equation has one real root
         else if (delta == 0) {
-            double root = -b / (2 * a); // Single root
-            return new double[]{root}; // Return single root
+            // Condition when discriminant is zero (one real root)
+
+            double root = -b / (2 * a);
+            // Calculating the single real root
+
+            return new double[]{root};
+            // Returning the single root
         }
 
-        // If delta is negative, no real roots exist
-        return new double[0]; // Return empty array
+        return new double[0];
+        // Returning empty array when no real roots exist
     }
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        // Scanner object to read input values
+        // Creating Scanner object to read user input
 
         System.out.print("Enter value of a: ");
-        double a = input.nextDouble(); // Coefficient of x^2
+        // Prompting user to enter coefficient a
+
+        double a = input.nextDouble();
+        // Reading coefficient of x²
 
         System.out.print("Enter value of b: ");
-        double b = input.nextDouble(); // Coefficient of x
+        // Prompting user to enter coefficient b
+
+        double b = input.nextDouble();
+        // Reading coefficient of x
 
         System.out.print("Enter value of c: ");
-        double c = input.nextDouble(); // Constant term
+        // Prompting user to enter constant c
 
-        // Call method to calculate roots
+        double c = input.nextDouble();
+        // Reading constant term
+
         double[] result = quadraticFormula(a, b, c);
+        // Calling method to calculate quadratic roots
 
-        // Check if roots exist
         if (result.length == 0) {
+            // Checking if no real roots are returned
+
             System.out.println("No real roots.");
-        } else {
+            // Printing message when roots do not exist
+        }
+        else {
+            // Case when one or two real roots exist
+
             System.out.print("The roots of x are: ");
-            // Print all roots returned
+            // Printing heading for roots
+
             for (double r : result) {
+                // Looping through all returned roots
+
                 System.out.print(r + " ");
+                // Printing each root
             }
         }
     }

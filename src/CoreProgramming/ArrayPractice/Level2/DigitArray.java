@@ -1,82 +1,71 @@
-package CoreProgramming.ArrayPractice.Level2;
+/*
+ This program extracts all digits from a given number,
+ stores them in an array with dynamic resizing,
+ and then finds the largest and second largest digits.
+*/
+package CoreProgramming.ArrayPractice.Level2; // Defines the package for Level 2 array practice programs
 
-import java.util.Scanner;
-// Scanner class is used to take input from the user
+import java.util.Scanner; // Scanner class is used to take input from the user
 
-public class DigitArray {
-    public static void main(String[] args) {
+public class DigitArray { // Main class definition
+    public static void main(String[] args) { // Main method where execution starts
 
-        Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read input
+        Scanner input = new Scanner(System.in); // Creating Scanner object to read input
 
-        System.out.println("Enter a number: ");
-        int number = input.nextInt();
-        // Reading the number from the user
+        System.out.println("Enter a number: "); // Prompts user to enter a number
+        int number = input.nextInt(); // Reads the number from the user
 
-        int maxDigit = 10;
-        // Initial size of the digits array
+        int maxDigit = 10; // Initial size of the digits array
 
-        int[] digits = new int[maxDigit];
-        // Array to store digits of the number
+        int[] digits = new int[maxDigit]; // Array to store digits of the number
 
-        int index = 0;
-        // Keeps track of how many digits are stored
+        int index = 0; // Keeps track of how many digits are stored
 
         // Loop to extract digits from the number
-        while (number != 0) {
+        while (number != 0) { // Continues until all digits are processed
 
-            // If array is full, increase its size dynamically
-            if (index == maxDigit) {
+            // If the array is full, increase its size dynamically
+            if (index == maxDigit) { // Checks if array capacity is reached
 
-                maxDigit += 10;
-                // Increasing array size by 10
+                maxDigit += 10; // Increases array size by 10
 
-                int[] temp = new int[maxDigit];
-                // Creating a new larger array
+                int[] temp = new int[maxDigit]; // Creates a new larger array
 
-                // Copying old digits into the new array
-                for (int i = 0; i < digits.length; i++) {
-                    temp[i] = digits[i];
+                // Copies existing digits into the new array
+                for (int i = 0; i < digits.length; i++) { // Iterates through old array
+                    temp[i] = digits[i]; // Copies each element
                 }
 
-                digits = temp;
-                // Assigning the resized array back to digits
+                digits = temp; // Assigns resized array back to digits
             }
 
-            digits[index] = number % 10;
-            // Extracting the last digit of the number
+            digits[index] = number % 10; // Extracts the last digit and stores it
 
-            number = number / 10;
-            // Removing the last digit from the number
+            number = number / 10; // Removes the last digit from the number
 
-            index++;
-            // Moving to the next index position
+            index++; // Moves to the next index position
         }
 
-        int largest = 0;
-        // Variable to store the largest digit
+        int largest = 0; // Variable to store the largest digit
 
-        int secondLargest = 0;
-        // Variable to store the second largest digit
+        int secondLargest = 0; // Variable to store the second largest digit
 
         // Loop to find the largest and second largest digits
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i < index; i++) { // Iterates through stored digits
 
-            if (digits[i] > largest) {
-                secondLargest = largest;
-                // Updating second largest before changing largest
-                largest = digits[i];
+            if (digits[i] > largest) { // Checks if current digit is greater than largest
+                secondLargest = largest; // Updates second largest
+                largest = digits[i]; // Updates largest digit
             }
             else if (digits[i] > secondLargest && digits[i] != largest) {
-                secondLargest = digits[i];
-                // Updating second largest if condition is satisfied
+                // Checks if digit is between largest and second largest
+                secondLargest = digits[i]; // Updates second largest digit
             }
         }
 
-        System.out.println("Largest digit: " + largest);
-        System.out.println("Second largest digit: " + secondLargest);
+        System.out.println("Largest digit: " + largest); // Displays the largest digit
+        System.out.println("Second largest digit: " + secondLargest); // Displays second largest digit
 
-        input.close();
-        // Closing Scanner to release resources
+        input.close(); // Closing Scanner to release resources
     }
 }

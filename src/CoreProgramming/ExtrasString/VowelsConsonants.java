@@ -1,42 +1,40 @@
-package CoreProgramming.Extras;
+/*
+ This program counts the number of vowels and consonants in a given string.
+ It reads a string from the user, checks each character, and increments
+ vowel or consonant counters based on simple character comparison logic.
+*/
+package CoreProgramming.Extras; // Specifies the package where this class belongs
 
-import java.util.Scanner;
-// Scanner class is used to take input from the user
+import java.util.Scanner; // Imports Scanner class to take input from the user
 
-public class VowelsConsonants {
-    public static void main(String[] args) {
+public class VowelsConsonants { // Class definition
+    public static void main(String[] args) { // Main method where execution starts
 
-        Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read user input
+        Scanner input = new Scanner(System.in); // Creates Scanner object for user input
 
-        System.out.print("Enter a string: ");
-        String text = input.nextLine();
-        // Reading the input string
+        System.out.print("Enter a string: "); // Prompts the user to enter a string
+        String text = input.nextLine(); // Reads the input string
 
-        int vowels = 0;
-        // Counter for vowels
+        int vowels = 0; // Variable to count number of vowels
 
-        int consonants = 0;
-        // Counter for consonants
+        int consonants = 0; // Variable to count number of consonants
 
-        // Loop through each character in the string
-        for (int i = 0; i < text.length(); i++) {
+        // Loop to traverse each character in the string
+        for (int i = 0; i < text.length(); i++) { // Iterates through the string
 
-            char ch = text.charAt(i);
-            // Current character from the string
+            char ch = text.charAt(i); // Gets the current character
 
-            // Checking if the character is a vowel
+            // Checks if the character is a lowercase vowel
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-                vowels++;
+                vowels++; // Increments vowel count
             }
-            // All other characters are counted as consonants (as per given logic)
+            // Counts all other characters as consonants as per given logic
             else {
-                consonants++;
+                consonants++; // Increments consonant count
             }
         }
 
-        // Printing the count of vowels and consonants
-        System.out.println("The number of vowels in the given string is: " + vowels);
-        System.out.println("The number of consonants in the given string is: " + consonants);
+        System.out.println("The number of vowels in the given string is: " + vowels); // Prints vowel count
+        System.out.println("The number of consonants in the given string is: " + consonants); // Prints consonant count
     }
 }

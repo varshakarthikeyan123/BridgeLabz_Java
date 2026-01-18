@@ -1,65 +1,88 @@
+/*
+ This program generates an array of random 4-digit numbers and
+ calculates basic statistics such as average, minimum, and maximum.
+ It demonstrates the use of methods, arrays, loops, and Math utilities.
+*/
 package CoreProgramming.JavaMethods.Level2;
+// Package declaration for JavaMethods Level 2 programs
 
 public class RandomNumberStats {
+    // Class to generate random numbers and compute statistics
 
     // Method to generate an array of random 4-digit numbers
     public static int[] generate4DigitRandomArray(int size) {
 
-        // Create an array to store random numbers
         int[] numbers = new int[size];
+        // Creating an array to store random numbers
 
-        // Loop to generate each random 4-digit number
         for (int i = 0; i < size; i++) {
-            // Math.random() generates a value between 0.0 and 1.0
-            // Multiplying by 9000 gives range 0–8999, adding 1000 makes it 1000–9999
+            // Loop to fill the array with random numbers
+
             numbers[i] = (int) (Math.random() * 9000) + 1000;
+            // Generating a random 4-digit number between 1000 and 9999
         }
 
-        // Return the filled array
         return numbers;
+        // Returning the generated array
     }
 
     // Method to find average, minimum, and maximum of an integer array
     public static double[] findAverageMinMax(int[] numbers) {
 
-        // Initialize sum to calculate average
         int sum = 0;
+        // Variable to store sum of all numbers
 
-        // Initialize min and max with the first element
         int min = numbers[0];
-        int max = numbers[0];
+        // Initializing minimum with first element
 
-        // Loop through the array to calculate sum, min, and max
+        int max = numbers[0];
+        // Initializing maximum with first element
+
         for (int num : numbers) {
-            sum += num;                 // Add each number to sum
-            min = Math.min(min, num);   // Update minimum value
-            max = Math.max(max, num);   // Update maximum value
+            // Looping through each element in the array
+
+            sum += num;
+            // Adding current number to sum
+
+            min = Math.min(min, num);
+            // Updating minimum value if smaller number is found
+
+            max = Math.max(max, num);
+            // Updating maximum value if larger number is found
         }
 
-        // Calculate average
         double average = (double) sum / numbers.length;
+        // Calculating average of the numbers
 
-        // Return average, min, and max as a double array
         return new double[]{average, min, max};
+        // Returning average, minimum, and maximum as an array
     }
 
     public static void main(String[] args) {
 
-        // Generate an array of 5 random 4-digit numbers
         int[] randomNumbers = generate4DigitRandomArray(5);
+        // Generating an array of 5 random 4-digit numbers
 
-        // Print generated random numbers
         System.out.println("Generated 4-digit random numbers:");
+        // Printing heading message
+
         for (int num : randomNumbers) {
+            // Loop to print each random number
+
             System.out.print(num + " ");
+            // Printing the number
         }
 
-        // Find average, minimum, and maximum values
         double[] result = findAverageMinMax(randomNumbers);
+        // Calling method to find average, min, and max
 
-        // Display results
         System.out.println("\n\nAverage: " + result[0]);
+        // Printing the average value
+
         System.out.println("Minimum: " + result[1]);
+        // Printing the minimum value
+
         System.out.println("Maximum: " + result[2]);
+        // Printing the maximum value
     }
 }

@@ -1,10 +1,14 @@
-package CoreProgramming.ControlFlowPractices.Level1;
+/*
+ This program checks whether a person is eligible to vote.
+ It validates the entered age and then determines eligibility
+ based on the voting age criteria.
+*/
+package CoreProgramming.ControlFlowPractices.Level1; // Package for Level 1 control flow programs
 
-import java.util.Scanner;
-// Scanner class is used to take input from the user
+import java.util.Scanner; // Scanner class is used to take input from the user
 
-public class EligibilityCheck {
-    public static void main(String[] args) {
+public class EligibilityCheck { // Main class
+    public static void main(String[] args) { // Entry point of the program
 
         Scanner input = new Scanner(System.in);
         // Creating Scanner object to read user input
@@ -22,10 +26,10 @@ public class EligibilityCheck {
 
         // Checking voting eligibility based on age
         if (age >= 18) {
-            System.out.print("The person's age is " + age + " and can vote.");
+            System.out.println("The person's age is " + age + " and can vote.");
         }
         else {
-            System.out.print("The person's age is " + age + " and cannot vote.");
+            System.out.println("The person's age is " + age + " and cannot vote.");
         }
     }
 }

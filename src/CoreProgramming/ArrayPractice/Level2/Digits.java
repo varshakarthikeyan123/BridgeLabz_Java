@@ -1,3 +1,8 @@
+/*
+ This program extracts digits from a given number using an array.
+ It stores each digit, then finds and displays the largest
+ and second largest digits among them.
+*/
 package CoreProgramming.ArrayPractice.Level2;
 
 import java.util.Scanner;

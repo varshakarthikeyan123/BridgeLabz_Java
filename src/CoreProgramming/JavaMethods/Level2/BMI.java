@@ -1,3 +1,9 @@
+/*
+ This program calculates the Body Mass Index (BMI) for multiple people.
+ It stores weight, height, and BMI in a 2D array, calculates BMI using a method,
+ determines BMI category using another method, and finally displays the results
+ in a tabular format.
+*/
 package CoreProgramming.JavaMethods.Level2;
 
 import java.util.Scanner;
@@ -12,19 +18,19 @@ public class BMI {
         for (int i = 0; i < data.length; i++) {
 
             double weight = data[i][0];
-            // Weight in kilograms
+            // Fetching weight in kilograms from the array
 
             double heightCm = data[i][1];
-            // Height in centimeters
+            // Fetching height in centimeters from the array
 
             double heightM = heightCm / 100;
             // Converting height from centimeters to meters
 
             double bmi = weight / (heightM * heightM);
-            // Calculating BMI using the formula
+            // Calculating BMI using the formula weight / (height in meters)^2
 
             data[i][2] = bmi;
-            // Storing BMI value in the third column
+            // Storing calculated BMI in the third column of the array
         }
     }
 
@@ -32,13 +38,13 @@ public class BMI {
     public static String[] getBMIStatus(double[][] data) {
 
         String[] status = new String[data.length];
-        // Array to store BMI status for each person
+        // Array to store BMI category for each person
 
-        // Loop through BMI values to assign status
+        // Loop through BMI values to assign appropriate status
         for (int i = 0; i < data.length; i++) {
 
             double bmi = data[i][2];
-            // Fetching BMI value
+            // Retrieving BMI value from the array
 
             if (bmi <= 18.4) {
                 status[i] = "Underweight";
@@ -55,13 +61,13 @@ public class BMI {
         }
 
         return status;
-        // Returning BMI status array
+        // Returning the BMI status array
     }
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read input
+        // Creating Scanner object to read user input
 
         double[][] persons = new double[10][3];
         // 2D array to store weight, height, and BMI for 10 persons
@@ -70,30 +76,33 @@ public class BMI {
         for (int i = 0; i < persons.length; i++) {
 
             System.out.println("Person " + (i + 1));
+            // Displaying person number
 
             System.out.print("Enter weight (kg): ");
             persons[i][0] = input.nextDouble();
-            // Storing weight
+            // Storing weight value in array
 
             System.out.print("Enter height (cm): ");
             persons[i][1] = input.nextDouble();
-            // Storing height
+            // Storing height value in array
         }
 
         calculateBMI(persons);
-        // Calling method to calculate BMI
+        // Calling method to calculate BMI for all persons
 
         String[] status = getBMIStatus(persons);
-        // Getting BMI status for each person
+        // Calling method to get BMI status for each person
 
-        // Displaying the final result in tabular format
+        // Displaying the final BMI report in tabular format
         System.out.println("\nHeight(cm)\tWeight(kg)\tBMI\t\tStatus");
+
         for (int i = 0; i < persons.length; i++) {
             System.out.printf("%.2f\t\t%.2f\t\t%.2f\t\t%s%n",
                     persons[i][1],
                     persons[i][0],
                     persons[i][2],
                     status[i]);
+            // Printing height, weight, BMI, and status for each person
         }
     }
 }

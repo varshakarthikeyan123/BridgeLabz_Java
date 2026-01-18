@@ -1,50 +1,63 @@
+/*
+ This program finds the longest word in a given sentence.
+ It scans the sentence character by character, builds words using letters,
+ and compares their lengths to determine the longest word.
+*/
 package CoreProgramming.Extras;
 
 import java.util.Scanner;
-// Scanner class is used to take input from the user
+// Importing Scanner class to take input from the user
 
 public class LongestWord {
+    // Class to find the longest word in a sentence
+
     public static void main(String[] args) {
+        // Main method where execution starts
 
         Scanner scanner = new Scanner(System.in);
         // Creating Scanner object to read user input
 
         System.out.print("Enter a sentence: ");
+        // Prompting the user to enter a sentence
         String sentence = scanner.nextLine();
-        // Reading the full sentence
+        // Reading the complete sentence from the user
 
         String longestWord = "";
-        // Stores the longest word found so far
+        // Variable to store the longest word found so far
 
         String currentWord = "";
-        // Temporarily stores the current word being formed
+        // Variable to temporarily store the current word being formed
 
-        // Loop through each character in the sentence
+        // Loop to traverse each character in the sentence
         for (int i = 0; i < sentence.length(); i++) {
 
             char ch = sentence.charAt(i);
-            // Getting the current character
+            // Extracting the character at index i
 
-            // If character is a letter, add it to current word
             if (Character.isLetter(ch)) {
+                // Checking if the character is an alphabet
                 currentWord += ch;
+                // Appending the character to the current word
             }
             else {
-                // If non-letter is found, compare current word with longest word
+                // When a non-letter character is encountered
                 if (currentWord.length() > longestWord.length()) {
+                    // Comparing current word length with longest word
                     longestWord = currentWord;
+                    // Updating longest word if current word is longer
                 }
-                // Reset current word
                 currentWord = "";
+                // Resetting current word for the next word
             }
         }
 
-        // Final check in case the sentence ends with a word
+        // Checking the last word in case the sentence ends with a letter
         if (currentWord.length() > longestWord.length()) {
             longestWord = currentWord;
+            // Updating longest word if the last word is longest
         }
 
-        // Printing the longest word
         System.out.println("Longest word: " + longestWord);
+        // Printing the longest word found
     }
 }

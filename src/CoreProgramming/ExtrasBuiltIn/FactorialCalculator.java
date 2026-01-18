@@ -1,41 +1,53 @@
+/*
+ This program calculates the factorial of a given non-negative integer.
+ It uses:
+ - A separate method to take and validate user input
+ - A recursive method to calculate factorial
+ - A display method to print the result
+ The program demonstrates method calls, recursion, and basic input validation.
+*/
 package CoreProgramming.ExtrasBuiltIn;
+// Package declaration for extra built-in concept programs
 
 import java.util.Scanner;
-// Scanner class is used to take input from the user
+// Importing Scanner class to take input from the user
 
 public class FactorialCalculator {
+    // Class to calculate factorial using recursion and methods
 
     public static void main(String[] args) {
+        // Main method where program execution begins
 
         int number = getInput();
-        // Calling method to get a valid number from the user
+        // Calling method to get a valid non-negative integer from the user
 
         long factorial = calculateFactorial(number);
-        // Calling recursive method to calculate factorial
+        // Calling recursive method to calculate factorial of the number
 
         displayResult(number, factorial);
-        // Displaying the final result
+        // Calling method to display the final factorial result
     }
 
     // Method to get input from the user
     public static int getInput() {
 
         Scanner scanner = new Scanner(System.in);
-        // Creating Scanner object to read input
+        // Creating Scanner object to read user input
 
         System.out.print("Enter a non-negative integer to calculate factorial: ");
         int num = scanner.nextInt();
-        // Reading the number
+        // Reading integer input from the user
 
-        // Factorial is not defined for negative numbers
+        // Checking if the entered number is negative
         if (num < 0) {
             System.out.println("Factorial is not defined for negative numbers. Exiting.");
+            // Displaying error message for invalid input
             System.exit(0);
-            // Terminating the program if input is invalid
+            // Terminating the program execution
         }
 
         return num;
-        // Returning valid input
+        // Returning the valid non-negative number
     }
 
     // Recursive method to calculate factorial
@@ -44,11 +56,12 @@ public class FactorialCalculator {
         // Base case: factorial of 0 or 1 is 1
         if (n == 0 || n == 1) {
             return 1;
+            // Returning 1 for base case
         }
         else {
-            // Recursive case:
-            // n! = n * (n-1)!
+            // Recursive case: n! = n × (n − 1)!
             return n * calculateFactorial(n - 1);
+            // Returning factorial value using recursion
         }
     }
 
@@ -56,6 +69,6 @@ public class FactorialCalculator {
     public static void displayResult(int num, long factorial) {
 
         System.out.println("Factorial of " + num + " is: " + factorial);
-        // Printing the final factorial value
+        // Printing the factorial result to the console
     }
 }

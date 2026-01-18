@@ -1,3 +1,8 @@
+/*
+ This program generates the multiplication table of a given number
+ from 6 to 9 using a for loop.
+ It takes user input and displays the calculated results.
+*/
 package CoreProgramming.ControlFlowPractices.Level2;
 
 import java.util.Scanner;
@@ -20,13 +25,13 @@ public class MultiplicationTable {
         for (int i = 6; i <= 9; i++) {
 
             table = number * i;
-            // Calculating multiplication result
+            // Calculating the multiplication result for each value of i
 
             System.out.println(
                     "The multiplication table for the number " + number +
                             " from 6 to 9 is: " + table
             );
-            // Printing the multiplication result
+            // Displaying the multiplication result
         }
     }
 }

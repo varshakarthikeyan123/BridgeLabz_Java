@@ -1,97 +1,87 @@
-package CoreProgramming.ArrayPractice.Level2;
+/*
+ This program manages student marks using a 2D array.
+ It stores Physics, Chemistry, and Maths marks for each student,
+ validates input, calculates percentage, assigns grades,
+ and displays the final result in a tabular format.
+*/
+package CoreProgramming.ArrayPractice.Level2; // Defines the package for Level 2 array practice programs
 
-import java.util.Scanner;
-// Scanner class is used to take input from the user
+import java.util.Scanner; // Scanner class is used to take input from the user
 
-public class ClassMarks2D {
-    public static void main(String[] args) {
+public class ClassMarks2D { // Main class definition
+    public static void main(String[] args) { // Main method where program execution starts
 
-        Scanner input = new Scanner(System.in);
-        // Creating Scanner object to read user input
+        Scanner input = new Scanner(System.in); // Creating Scanner object to read user input
 
-        System.out.print("Enter number of students: ");
-        int students = input.nextInt();
-        // Reading number of students
+        System.out.print("Enter number of students: "); // Prompting user for number of students
+        int students = input.nextInt(); // Reading number of students
 
-        int[][] marks = new int[students][3];
-        // 2D array to store marks
-        // Column 0 → Physics
-        // Column 1 → Chemistry
-        // Column 2 → Maths
+        int[][] marks = new int[students][3]; // 2D array to store marks of 3 subjects for each student
+        // marks[i][0] → Physics, marks[i][1] → Chemistry, marks[i][2] → Maths
 
-        double[] percentage = new double[students];
-        // Array to store percentage of each student
+        double[] percentage = new double[students]; // Array to store percentage of each student
 
-        char[] grade = new char[students];
-        // Array to store grade of each student
+        char[] grade = new char[students]; // Array to store grade of each student
 
         // Loop to take marks input for each student
-        for (int i = 0; i < students; i++) {
+        for (int i = 0; i < students; i++) { // Iterates through each student
 
-            System.out.println("\nEnter marks for Student " + (i + 1));
+            System.out.println("\nEnter marks for Student " + (i + 1)); // Displays student number
 
-            System.out.print("Physics: ");
-            marks[i][0] = input.nextInt();
-            // Reading Physics marks
+            System.out.print("Physics: "); // Prompt for Physics marks
+            marks[i][0] = input.nextInt(); // Reading Physics marks
 
-            System.out.print("Chemistry: ");
-            marks[i][1] = input.nextInt();
-            // Reading Chemistry marks
+            System.out.print("Chemistry: "); // Prompt for Chemistry marks
+            marks[i][1] = input.nextInt(); // Reading Chemistry marks
 
-            System.out.print("Maths: ");
-            marks[i][2] = input.nextInt();
-            // Reading Maths marks
+            System.out.print("Maths: "); // Prompt for Maths marks
+            marks[i][2] = input.nextInt(); // Reading Maths marks
 
-            // Validation: marks should not be negative
-            if (marks[i][0] < 0 || marks[i][1] < 0 || marks[i][2] < 0) {
-                System.out.println("Invalid marks! Enter positive values only.");
-                i--;
-                // Decrement i to re-enter marks for the same student
+            // Validation to ensure marks are not negative
+            if (marks[i][0] < 0 || marks[i][1] < 0 || marks[i][2] < 0) { // Checks for invalid input
+                System.out.println("Invalid marks! Enter positive values only."); // Error message
+                i--; // Decrements index to re-enter marks for same student
             }
         }
 
         // Loop to calculate percentage and assign grades
-        for (int i = 0; i < students; i++) {
+        for (int i = 0; i < students; i++) { // Iterates through each student
 
-            int total = marks[i][0] + marks[i][1] + marks[i][2];
-            // Calculating total marks (out of 300)
+            int total = marks[i][0] + marks[i][1] + marks[i][2]; // Calculates total marks out of 300
 
-            percentage[i] = (total / 300.0) * 100;
-            // Calculating percentage
+            percentage[i] = (total / 300.0) * 100; // Calculates percentage
 
             // Assigning grade based on percentage
-            if (percentage[i] >= 80) {
-                grade[i] = 'A';
+            if (percentage[i] >= 80) { // Grade A condition
+                grade[i] = 'A'; // Assigns grade A
             }
-            else if (percentage[i] >= 70) {
-                grade[i] = 'B';
+            else if (percentage[i] >= 70) { // Grade B condition
+                grade[i] = 'B'; // Assigns grade B
             }
-            else if (percentage[i] >= 60) {
-                grade[i] = 'C';
+            else if (percentage[i] >= 60) { // Grade C condition
+                grade[i] = 'C'; // Assigns grade C
             }
-            else if (percentage[i] >= 50) {
-                grade[i] = 'D';
+            else if (percentage[i] >= 50) { // Grade D condition
+                grade[i] = 'D'; // Assigns grade D
             }
-            else if (percentage[i] >= 40) {
-                grade[i] = 'E';
+            else if (percentage[i] >= 40) { // Grade E condition
+                grade[i] = 'E'; // Assigns grade E
             }
-            else {
-                grade[i] = 'R';
-                // R indicates Reappear / Fail
+            else { // Fail condition
+                grade[i] = 'R'; // R indicates Reappear / Fail
             }
         }
 
-        // Loop to display marks, percentage, and grade
-        for (int i = 0; i < students; i++) {
+        // Loop to display marks, percentage, and grade for each student
+        for (int i = 0; i < students; i++) { // Iterates through each student
             System.out.printf("%d\t%d\t\t%d\t%.2f\t\t%c%n",
-                    marks[i][0],   // Physics
-                    marks[i][1],   // Chemistry
-                    marks[i][2],   // Maths
-                    percentage[i], // Percentage
-                    grade[i]);     // Grade
+                    marks[i][0],   // Displays Physics marks
+                    marks[i][1],   // Displays Chemistry marks
+                    marks[i][2],   // Displays Maths marks
+                    percentage[i], // Displays percentage
+                    grade[i]);     // Displays grade
         }
 
-        input.close();
-        // Closing Scanner to free resources
+        input.close(); // Closing Scanner to release system resources
     }
 }
