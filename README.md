@@ -34,15 +34,19 @@ README File
 
 • **10-Jan-2026 (Saturday)**: Revised Java basics including variables, data types, operators, and input/output handling.
 
-• 11-Jan-2026 (Sunday): Practiced Programming Elements and solved related Java problems.
+• **11-Jan-2026 (Sunday)**: Practiced Programming Elements and solved related Java problems.
 
-• 12-Jan-2026 (Monday): Continued Programming Elements and strengthened logical problem-solving skills.
+• **12-Jan-2026 (Monday)**: Continued Programming Elements and strengthened logical problem-solving skills.
 
-• 13-Jan-2026 (Tuesday): Studied Control Flow concepts including conditional statements and loops.
+• **13-Jan-2026 (Tuesday)**: Studied Control Flow concepts including conditional statements and loops.
 
-• 14-Jan-2026 (Wednesday): Solved Control Flow Level 1 and Level 2 programs and committed changes to feature/CoreProgramming branch.
+• **14-Jan-2026 (Wednesday)**: Solved Control Flow Level 1 and Level 2 programs and committed changes to feature/CoreProgramming branch.
 
-• 15-Jan-2026 (Thursday): Completed Control Flow Level 3 programs. Practiced Arrays and solved array-based problems.
+• **15-Jan-2026 (Thursday)**: Completed Control Flow Level 3 programs. Practiced Arrays and solved array-based problems.
 
-• 16-Jan-2026 (Friday): Completed Methods and String programs. Learned Git and Git Flow process, branch creation, publishing, and daily workflow management. Reorder Git Repo using Git Flow.
+• **16-Jan-2026 (Friday)**: Completed Methods and String programs. Learned Git and Git Flow process, branch creation, publishing, and daily workflow management. Reorder Git Repo using Git Flow.
+
+• **17-Jan-2026 (Saturday)**:Completed Week 2. Reordered Repo.
+
+
 
