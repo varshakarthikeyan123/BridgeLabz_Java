@@ -3,7 +3,7 @@
  The computer guesses a number using binary search logic,
  and the user guides it by giving feedback.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

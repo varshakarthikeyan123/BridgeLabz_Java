@@ -9,7 +9,7 @@
  loops, conditional checks, and boolean results in Java.
 */
 
-package coreprogramming.stringfunctions.Level1;
+package CoreProgramming.stringfunctions.Level1;
 
 import java.util.Scanner; // imports Scanner class to take input from the user
 

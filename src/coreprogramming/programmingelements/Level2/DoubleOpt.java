@@ -8,7 +8,7 @@
  produce different results.
 */
 
-package coreprogramming.programmingelements.Level2;
+package CoreProgramming.programmingelements.Level2;
 
 import java.util.Scanner; // imports Scanner class to take input from the user
 

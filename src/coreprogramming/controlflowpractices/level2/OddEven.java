@@ -3,7 +3,7 @@
  are odd or even.
  It also counts how many even and odd numbers are present.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

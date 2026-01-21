@@ -3,7 +3,7 @@
  It stores the factors in an array, dynamically increases
  the array size if needed, and finally displays all factors.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Scanner is used to take input from the user
 

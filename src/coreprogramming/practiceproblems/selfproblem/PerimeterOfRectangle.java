@@ -3,7 +3,7 @@
  It takes the length and width as input from the user
  and applies the formula: Perimeter = 2 × (length + width).
 */
-package coreprogramming.practiceproblems.selfproblem;
+package CoreProgramming.practiceproblems.selfproblem;
 
 import java.util.Scanner; // Importing Scanner class to take input from the user
 

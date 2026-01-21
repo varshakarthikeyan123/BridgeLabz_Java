@@ -4,7 +4,7 @@
  and determines if both strings contain the same characters
  in the same counts.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 
 import java.util.Scanner;
 // Importing Scanner class to take input from the user

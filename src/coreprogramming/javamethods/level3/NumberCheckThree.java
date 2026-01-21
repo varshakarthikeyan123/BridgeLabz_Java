@@ -4,7 +4,7 @@
  This program checks whether a number is a Palindrome and a Duck Number
  by converting the number into a digit array and applying array operations.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner;
 // Scanner is used to take input from the user

@@ -11,7 +11,7 @@
  arrays, loops, and formatted output in Java.
 */
 
-package coreprogramming.stringfunctions.Level2;
+package CoreProgramming.stringfunctions.Level2;
 
 import java.util.Scanner; // imports Scanner class to take input from the user
 

@@ -7,7 +7,7 @@
  - Formula-based LCM calculation
  - User input using Scanner
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Package declaration for extra built-in programs
 
 import java.util.Scanner;

@@ -3,7 +3,7 @@
  by taking the radius as input from the user
  and applying the formula π × r².
 */
-package coreprogramming.practiceproblems.assistedproblems;
+package CoreProgramming.practiceproblems.assistedproblems;
 
 import java.util.Scanner; // Importing Scanner class for user input
 

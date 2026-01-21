@@ -4,7 +4,7 @@
  determines BMI category using another method, and finally displays the results
  in a tabular format.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

@@ -4,7 +4,7 @@
  and follows the Gregorian calendar rules (year ≥ 1582).
  Then it applies leap year conditions to determine the result.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

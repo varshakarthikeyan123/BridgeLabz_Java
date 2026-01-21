@@ -3,7 +3,7 @@
  It uses conditional statements to compare the three values and
  prints which number is the largest or if multiple numbers are equal.
 */
-package coreprogramming.controlflowpractices.level1; // Defines the package for control flow practice programs
+package CoreProgramming.controlflowpractices.level1; // Defines the package for control flow practice programs
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

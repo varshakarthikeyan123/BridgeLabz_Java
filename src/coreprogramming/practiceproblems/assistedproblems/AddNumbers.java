@@ -2,7 +2,7 @@
  This program takes two integer inputs from the user
  and calculates their sum, then displays the result.
 */
-package coreprogramming.practiceproblems.assistedproblems;
+package CoreProgramming.practiceproblems.assistedproblems;
 
 import java.util.Scanner; // Importing Scanner class for user input
 

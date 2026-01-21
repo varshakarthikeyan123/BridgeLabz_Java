@@ -5,7 +5,7 @@
  2) Fahrenheit to Celsius
  The program uses methods to demonstrate code reuse and clarity.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

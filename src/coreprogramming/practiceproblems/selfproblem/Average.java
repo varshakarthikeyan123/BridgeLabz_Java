@@ -2,7 +2,7 @@
  This program calculates the average of three numbers
  entered by the user.
 */
-package coreprogramming.practiceproblems.selfproblem;
+package CoreProgramming.practiceproblems.selfproblem;
 
 import java.util.Scanner; // Importing Scanner class for user input
 

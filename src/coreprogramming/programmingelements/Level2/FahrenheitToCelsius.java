@@ -8,7 +8,7 @@
  arithmetic operations, and output in Java.
 */
 
-package coreprogramming.programmingelements.Level2;
+package CoreProgramming.programmingelements.Level2;
 
 import java.util.Scanner; // imports Scanner class to read input from the user
 

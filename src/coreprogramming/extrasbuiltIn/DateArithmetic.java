@@ -4,7 +4,7 @@
  adding days, adding months, adding years, and subtracting days.
  It also correctly handles month transitions and leap years.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Defines the package for extra built-in utility programs
 
 import java.util.Scanner;

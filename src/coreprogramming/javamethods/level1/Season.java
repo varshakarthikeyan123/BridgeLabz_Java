@@ -2,7 +2,7 @@
  This program checks whether a given date (month and day)
  falls under the Spring season based on predefined date ranges.
 */
-package coreprogramming.javamethods.level1;
+package CoreProgramming.javamethods.level1;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

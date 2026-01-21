@@ -1,4 +1,4 @@
-package coreprogramming.javamethods.level1;
+package CoreProgramming.javamethods.level1;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

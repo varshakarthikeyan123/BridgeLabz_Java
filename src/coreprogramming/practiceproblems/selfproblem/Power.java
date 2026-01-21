@@ -3,7 +3,7 @@
  It takes a base value and an exponent from the user
  and uses Math.pow() to compute the result.
 */
-package coreprogramming.practiceproblems.selfproblem;
+package CoreProgramming.practiceproblems.selfproblem;
 
 import java.util.Scanner; // Importing Scanner class to take user input
 

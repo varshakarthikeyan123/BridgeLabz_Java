@@ -3,7 +3,7 @@
  It ensures the user enters a valid number (≥ 1),
  then counts down to 1 and finally displays a launch message.
 */
-package coreprogramming.controlflowpractices.level1; // Package for control flow practice programs (Level 1)
+package CoreProgramming.controlflowpractices.level1; // Package for control flow practice programs (Level 1)
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

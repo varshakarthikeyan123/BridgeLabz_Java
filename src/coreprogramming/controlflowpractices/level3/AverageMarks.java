@@ -4,7 +4,7 @@
  It then assigns a grade according to the average marks
  using conditional statements.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

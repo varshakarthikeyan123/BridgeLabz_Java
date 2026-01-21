@@ -4,7 +4,7 @@
  This program checks various properties of a number such as Duck number,
  Armstrong number, largest/smallest digits, etc., using modular methods.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner;
 // Scanner is used to take input from the user

@@ -3,7 +3,7 @@
  It takes two numbers and an arithmetic operator from the user
  and performs the corresponding calculation.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

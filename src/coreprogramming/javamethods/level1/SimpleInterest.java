@@ -4,7 +4,7 @@
  It takes user input for principal amount, rate of interest, and time period,
  then displays the calculated simple interest.
 */
-package coreprogramming.javamethods.level1;
+package CoreProgramming.javamethods.level1;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

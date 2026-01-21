@@ -3,7 +3,7 @@
  An Armstrong number is a number that is equal to the sum of its digits
  each raised to the power of the total number of digits.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

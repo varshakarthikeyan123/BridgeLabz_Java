@@ -3,7 +3,7 @@
  A prime number is a number greater than 1 that has no divisors
  other than 1 and itself.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

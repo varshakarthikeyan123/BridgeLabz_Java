@@ -4,7 +4,7 @@
  The program uses two pointers (start and end) to compare characters
  from both ends of the string until they meet in the middle.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 // Package declaration that groups this class under CoreProgramming.Extras
 
 import java.util.Scanner;

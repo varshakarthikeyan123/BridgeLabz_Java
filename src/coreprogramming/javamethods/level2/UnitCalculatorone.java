@@ -5,7 +5,7 @@
  3) Meters to Feet
  4) Feet to Meters
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration
 
 import java.util.Scanner;

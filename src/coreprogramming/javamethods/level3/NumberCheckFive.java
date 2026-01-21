@@ -3,7 +3,7 @@
  It finds factors of a number and checks whether the number is
  Perfect, Abundant, Deficient, and Strong.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

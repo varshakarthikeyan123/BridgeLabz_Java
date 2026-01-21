@@ -5,7 +5,7 @@
  computes adjusted values, and displays
  the corresponding day and month names.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

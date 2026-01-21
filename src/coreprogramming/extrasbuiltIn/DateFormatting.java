@@ -3,7 +3,7 @@
  It manually converts milliseconds into days, then computes the current year, month, and day.
  Finally, it formats the date into multiple standard formats without using built-in Date APIs.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Defines the package for extra built-in utility programs
 
 public class DateFormatting {

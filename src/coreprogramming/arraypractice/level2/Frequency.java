@@ -4,7 +4,7 @@
  each digit (0–9) appears, and displays the frequency result.
 */
 
-package coreprogramming.arraypractice.level2;
+package CoreProgramming.arraypractice.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

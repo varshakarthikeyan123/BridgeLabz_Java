@@ -3,7 +3,7 @@
  It takes radius and height as input from the user
  and applies the volume formula of a cylinder.
 */
-package coreprogramming.practiceproblems.assistedproblems;
+package CoreProgramming.practiceproblems.assistedproblems;
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

@@ -3,7 +3,7 @@
  It stores the multiplication results from 1 to 10 in an array
  and then displays all the values stored in the array.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for array practice programs (Level 1)
+package CoreProgramming.arraypractice.level1; // Defines the package for array practice programs (Level 1)
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

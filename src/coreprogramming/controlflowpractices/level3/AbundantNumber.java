@@ -3,7 +3,7 @@
  An abundant number is a number for which the sum of its proper divisors
  (excluding the number itself) is greater than the number.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

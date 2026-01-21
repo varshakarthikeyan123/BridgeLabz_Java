@@ -4,7 +4,7 @@
  The logic checks every number from 1 to N and prints those
  which divide N exactly.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 // Package declaration for Level 2 control flow practice programs
 
 import java.util.Scanner;

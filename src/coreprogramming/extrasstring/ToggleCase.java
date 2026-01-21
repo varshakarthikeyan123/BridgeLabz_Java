@@ -3,7 +3,7 @@
  Lowercase letters are converted to uppercase, uppercase letters are
  converted to lowercase, and non-alphabet characters remain unchanged.
 */
-package coreprogramming.Extras; // Defines the package name for this program
+package CoreProgramming.Extras; // Defines the package name for this program
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

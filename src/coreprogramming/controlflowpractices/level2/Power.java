@@ -3,7 +3,7 @@
  It takes a base number and an exponent from the user
  and computes the result using a loop.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

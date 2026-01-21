@@ -12,7 +12,7 @@
  The program uses double data type for precision
  and Random class to generate matrix values.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Random;
 

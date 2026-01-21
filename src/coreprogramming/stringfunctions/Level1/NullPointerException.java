@@ -9,7 +9,7 @@
  and safe exception handling in Java.
 */
 
-package coreprogramming.stringfunctions.Level1;
+package CoreProgramming.stringfunctions.Level1;
 
 public class NullPointerException {
 

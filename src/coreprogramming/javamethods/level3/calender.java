@@ -3,7 +3,7 @@
  using Zeller’s Congruence to calculate the first day of the month.
 */
 
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner;
 

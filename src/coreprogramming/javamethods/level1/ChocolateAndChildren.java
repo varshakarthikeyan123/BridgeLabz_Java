@@ -4,7 +4,7 @@
  It uses a method to perform division and modulus operations
  and returns the result using an integer array.
 */
-package coreprogramming.javamethods.level1; // Defines the package for this class
+package CoreProgramming.javamethods.level1; // Defines the package for this class
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

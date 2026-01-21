@@ -3,7 +3,7 @@
  It takes user input, applies the modulus operator,
  and displays the result based on the divisibility condition.
 */
-package coreprogramming.controlflowpractices.level1; // Package for Level 1 control flow practice programs
+package CoreProgramming.controlflowpractices.level1; // Package for Level 1 control flow practice programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

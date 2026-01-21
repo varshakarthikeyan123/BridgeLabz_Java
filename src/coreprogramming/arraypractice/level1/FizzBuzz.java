@@ -3,7 +3,7 @@
  It stores the result in a String array and displays each position
  along with the final FizzBuzz array.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

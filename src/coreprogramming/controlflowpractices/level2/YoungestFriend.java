@@ -3,7 +3,7 @@
  It uses methods, conditional statements, and user input to compare ages and heights
  and display the results.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 // Package declaration for Level 2 control flow practice programs
 
 import java.util.Scanner;

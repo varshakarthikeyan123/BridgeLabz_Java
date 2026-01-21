@@ -4,7 +4,7 @@
  converts the 2D array into a 1D array, and then displays
  the resulting 1D array.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Scanner is used to take input from the user
 

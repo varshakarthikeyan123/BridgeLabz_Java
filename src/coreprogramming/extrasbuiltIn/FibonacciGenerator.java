@@ -7,7 +7,7 @@
  - Loop-based Fibonacci logic
  - Basic input validation
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Package declaration for extra built-in concept programs
 
 import java.util.Scanner;

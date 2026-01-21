@@ -3,7 +3,7 @@
  A palindrome is a word or phrase that reads the same
  forward and backward (example: madam, level).
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

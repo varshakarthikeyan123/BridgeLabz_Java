@@ -4,7 +4,7 @@
  The program takes a number as input, calculates the sum of its digits,
  and checks divisibility.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

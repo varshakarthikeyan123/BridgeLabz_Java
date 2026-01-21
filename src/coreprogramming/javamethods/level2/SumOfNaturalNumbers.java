@@ -5,7 +5,7 @@
  2) Mathematical formula
  It then compares both results to verify correctness.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration for Java Methods Level 2 programs
 
 import java.util.Scanner;

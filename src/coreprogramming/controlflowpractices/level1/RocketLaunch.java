@@ -3,7 +3,7 @@
  It takes a number from the user and counts down to 1,
  then prints a launch message.
 */
-package coreprogramming.controlflowpractices.level1;
+package CoreProgramming.controlflowpractices.level1;
 // Package declaration
 
 import java.util.Scanner;

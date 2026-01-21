@@ -3,7 +3,7 @@
  It calculates the products of the number with values from 6 to 9,
  stores the results in an array, and then displays the array elements.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Scanner is used to take input from the user
 

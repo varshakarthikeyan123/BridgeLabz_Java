@@ -5,7 +5,7 @@
  checks even or odd for positive numbers,
  and finally compares the first and last elements of the array.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

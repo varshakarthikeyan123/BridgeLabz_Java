@@ -3,7 +3,7 @@
  It takes a base number and an exponent from the user
  and computes the result by repeated multiplication.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 // Package declaration for control flow practice programs (Level 2)
 
 import java.util.Scanner;

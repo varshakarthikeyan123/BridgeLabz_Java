@@ -3,7 +3,7 @@
  It validates the entered age and then determines eligibility
  based on the voting age criteria.
 */
-package coreprogramming.controlflowpractices.level1; // Package for Level 1 control flow programs
+package CoreProgramming.controlflowpractices.level1; // Package for Level 1 control flow programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

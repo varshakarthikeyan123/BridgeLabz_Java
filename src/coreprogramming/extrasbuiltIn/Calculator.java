@@ -3,7 +3,7 @@
  It takes two numbers and an arithmetic operator from the user
  and performs the corresponding operation using a switch case.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Defines the package for extra built-in practice programs
 
 import java.util.Scanner;

@@ -3,7 +3,7 @@
  It takes the ages of 10 students as input, displays the ages,
  and then checks whether each student can vote based on age.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for array practice programs (Level 1)
+package CoreProgramming.arraypractice.level1; // Defines the package for array practice programs (Level 1)
 
 import java.util.Scanner; // Scanner is used to take input from the user
 

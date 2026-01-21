@@ -4,7 +4,7 @@
  It handles cases where there are two real roots, one real root,
  or no real roots based on the discriminant value.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration for organizing JavaMethods Level 2 programs
 
 import java.util.Scanner;

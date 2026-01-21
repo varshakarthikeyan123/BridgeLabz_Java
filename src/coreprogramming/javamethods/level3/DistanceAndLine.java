@@ -5,7 +5,7 @@
  The line equation is displayed in slope–intercept form (y = mx + b),
  and vertical line cases are handled separately.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

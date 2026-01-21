@@ -3,7 +3,7 @@
  It validates the input, stores odd and even numbers in separate arrays,
  and then displays both lists.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for array practice programs (Level 1)
+package CoreProgramming.arraypractice.level1; // Defines the package for array practice programs (Level 1)
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

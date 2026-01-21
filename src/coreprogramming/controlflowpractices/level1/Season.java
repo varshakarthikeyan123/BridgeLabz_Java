@@ -4,7 +4,7 @@
  The program takes month and day as input, uses a method to validate
  the season, and prints the result.
 */
-package coreprogramming.controlflowpractices.level1;
+package CoreProgramming.controlflowpractices.level1;
 // Package declaration for control flow practice programs
 
 import java.util.Scanner;

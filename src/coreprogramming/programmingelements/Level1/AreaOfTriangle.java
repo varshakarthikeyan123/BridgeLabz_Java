@@ -7,7 +7,7 @@
  operations, and unit conversion in Java.
 */
 
-package coreprogramming.programmingelements.Level1;
+package CoreProgramming.programmingelements.Level1;
 
 import java.util.Scanner; // imports Scanner class to take input from the user
 

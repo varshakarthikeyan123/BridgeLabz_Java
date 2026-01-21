@@ -8,7 +8,7 @@
  The program demonstrates the use of arrays, methods,
  loops, and basic statistical calculations.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 public class HeightOfPlayers {
 

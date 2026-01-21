@@ -4,7 +4,7 @@
  a 5% bonus on salary is calculated and displayed.
  Otherwise, it displays that no bonus is applicable.
 */
-package coreprogramming.controlflowpractices.level1; // Defines the package for control flow practice programs (Level 1)
+package CoreProgramming.controlflowpractices.level1; // Defines the package for control flow practice programs (Level 1)
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

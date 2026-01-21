@@ -3,7 +3,7 @@
  positive, negative, or zero. It uses a separate method
  to perform the check and prints the result to the console.
 */
-package coreprogramming.javamethods.level1;
+package CoreProgramming.javamethods.level1;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

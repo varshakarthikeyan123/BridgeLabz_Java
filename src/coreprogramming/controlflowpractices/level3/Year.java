@@ -4,7 +4,7 @@
  and is not earlier than 1582 (start of the Gregorian calendar).
  Based on leap year rules, it prints whether the year is a leap year or not.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Defines the package for Level 3 control flow practice programs
 
 import java.util.Scanner;

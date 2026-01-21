@@ -2,7 +2,7 @@
  This program checks and prints whether numbers from 1 to a given number
  are odd or even. It also counts how many even and odd numbers are present.
 */
-package coreprogramming.controlflowpractices.level1; // Package declaration
+package CoreProgramming.controlflowpractices.level1; // Package declaration
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

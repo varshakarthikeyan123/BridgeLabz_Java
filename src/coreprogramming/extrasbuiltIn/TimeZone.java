@@ -4,7 +4,7 @@
  into readable HH:MM:SS format for different time zones
  like GMT, IST, and PST using time offsets.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 
 /*
  The TimeZone class contains methods to convert milliseconds

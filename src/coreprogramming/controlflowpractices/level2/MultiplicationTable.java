@@ -3,7 +3,7 @@
  from 6 to 9 using a for loop.
  It takes user input and displays the calculated results.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

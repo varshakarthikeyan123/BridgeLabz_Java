@@ -5,7 +5,7 @@
  - Conditional statements (if–else if–else)
  - Comparison of multiple values
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Package declaration for extra built-in programs
 
 import java.util.Scanner;

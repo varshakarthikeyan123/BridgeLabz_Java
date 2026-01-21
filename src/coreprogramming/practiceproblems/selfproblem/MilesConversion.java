@@ -2,7 +2,7 @@
  This program converts distance from kilometers to miles
  using a fixed conversion factor.
 */
-package coreprogramming.practiceproblems.selfproblem;
+package CoreProgramming.practiceproblems.selfproblem;
 
 import java.util.Scanner; // Importing Scanner class to take user input
 

@@ -6,7 +6,7 @@
  - A display method to print the result
  The program demonstrates method calls, recursion, and basic input validation.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Package declaration for extra built-in concept programs
 
 import java.util.Scanner;

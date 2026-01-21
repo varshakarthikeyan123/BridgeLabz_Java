@@ -3,7 +3,7 @@
  It takes age and height as input, validates the data,
  and then finds and displays the youngest and tallest friend.
 */
-package coreprogramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
+package CoreProgramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

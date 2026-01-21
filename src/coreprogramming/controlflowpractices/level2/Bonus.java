@@ -4,7 +4,7 @@
  If the years of service are greater than 5,
  the employee receives a 5% bonus on the salary.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 // Package declaration for Level 2 control flow practice programs
 
 import java.util.Scanner;

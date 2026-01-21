@@ -4,7 +4,7 @@
  The perimeter of the triangle is calculated using its three sides,
  and the number of rounds is derived from that.
 */
-package coreprogramming.javamethods.level1;
+package CoreProgramming.javamethods.level1;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

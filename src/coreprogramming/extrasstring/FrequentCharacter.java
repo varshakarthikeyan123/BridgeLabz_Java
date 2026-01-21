@@ -4,7 +4,7 @@
  counts its occurrences, and identifies the character
  with the highest frequency.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 
 import java.util.Scanner;
 // Importing Scanner class to take input from the user

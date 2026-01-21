@@ -9,7 +9,7 @@
  arrays, loops, and comparison logic in Java.
 */
 
-package coreprogramming.stringfunctions.Level1;
+package CoreProgramming.stringfunctions.Level1;
 
 import java.util.Scanner; // imports Scanner class to take input from the user
 

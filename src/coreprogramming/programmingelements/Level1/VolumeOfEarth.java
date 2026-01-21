@@ -7,7 +7,7 @@
  (4/3) × π × r³.
 */
 
-package coreprogramming.programmingelements.Level1;
+package CoreProgramming.programmingelements.Level1;
 
 public class VolumeOfEarth {
 

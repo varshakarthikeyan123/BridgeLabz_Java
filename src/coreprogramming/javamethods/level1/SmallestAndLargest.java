@@ -3,7 +3,7 @@
  It uses a separate method to compare the values and returns the result
  as an array containing the smallest and largest numbers.
 */
-package coreprogramming.javamethods.level1;
+package CoreProgramming.javamethods.level1;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

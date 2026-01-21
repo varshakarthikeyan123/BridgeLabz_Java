@@ -5,7 +5,7 @@
  operations, and output statements in Java.
 */
 
-package coreprogramming.programmingelements.Level1;
+package CoreProgramming.programmingelements.Level1;
 
 public class AverageMarks {
 

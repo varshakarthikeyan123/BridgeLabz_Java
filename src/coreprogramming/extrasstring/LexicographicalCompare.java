@@ -3,7 +3,7 @@
  It compares characters one by one using their ASCII values.
  If all compared characters are equal, the comparison is based on string length.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 
 import java.util.Scanner;
 // Importing Scanner class to take input from the user

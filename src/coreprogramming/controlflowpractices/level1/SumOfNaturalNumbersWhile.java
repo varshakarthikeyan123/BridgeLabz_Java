@@ -4,7 +4,7 @@
  The sum is calculated using the formula n*(n+1)/2.
  The program then uses while loops to compare the number with the sum.
 */
-package coreprogramming.controlflowpractices.level1;
+package CoreProgramming.controlflowpractices.level1;
 // Package declaration for control flow practice programs
 
 import java.util.Scanner;

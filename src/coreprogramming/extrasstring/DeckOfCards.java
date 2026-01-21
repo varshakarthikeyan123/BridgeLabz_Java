@@ -9,7 +9,7 @@
  randomization, method decomposition, and formatted output in Java.
 */
 
-package coreprogramming.stringfunctions.Level3;
+package CoreProgramming.stringfunctions.Level3;
 
 import java.util.Scanner; // imports Scanner class to take input from the user
 

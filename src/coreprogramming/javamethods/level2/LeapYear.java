@@ -2,7 +2,7 @@
  This program checks whether a given year is a Leap Year.
  It validates the year and then applies leap year rules.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

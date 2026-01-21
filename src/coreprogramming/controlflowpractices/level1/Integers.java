@@ -3,7 +3,7 @@
  It uses conditional statements (if–else if–else) to compare the input value
  and prints the corresponding result.
 */
-package coreprogramming.controlflowpractices.level1; // Defines the package for control flow practice programs
+package CoreProgramming.controlflowpractices.level1; // Defines the package for control flow practice programs
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

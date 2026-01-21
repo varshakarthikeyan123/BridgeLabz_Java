@@ -8,7 +8,7 @@
  arithmetic operators, and formatted output.
 */
 
-package coreprogramming.programmingelements.Level1;
+package CoreProgramming.programmingelements.Level1;
 
 import java.util.Scanner; // imports Scanner class for taking user input
 

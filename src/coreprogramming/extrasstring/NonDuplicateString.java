@@ -3,7 +3,7 @@
  It scans the string character by character and builds a new string
  containing only the first occurrence of each character.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 
 import java.util.Scanner;
 // Importing Scanner class to take input from the user

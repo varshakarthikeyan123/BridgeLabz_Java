@@ -3,7 +3,7 @@
  A prime number is a number greater than 1 that has only two factors:
  1 and itself.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

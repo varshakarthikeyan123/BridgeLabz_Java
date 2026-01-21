@@ -3,7 +3,7 @@
  calculates total, average, and percentage,
  and displays a formatted scorecard.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Random;
 

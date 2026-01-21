@@ -3,7 +3,7 @@
  calculates basic statistics such as average, minimum, and maximum.
  It demonstrates the use of methods, arrays, loops, and Math utilities.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration for JavaMethods Level 2 programs
 
 public class RandomNumberStats {

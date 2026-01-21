@@ -6,7 +6,7 @@
  4) Calculates the product of factors
  5) Calculates the sum of squares of factors
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

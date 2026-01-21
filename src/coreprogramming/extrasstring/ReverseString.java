@@ -4,7 +4,7 @@
  in reverse order by looping from the last
  character to the first.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 // Package declaration
 
 import java.util.Scanner;

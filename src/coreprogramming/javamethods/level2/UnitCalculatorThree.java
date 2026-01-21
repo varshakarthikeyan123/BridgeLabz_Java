@@ -9,7 +9,7 @@
  6) Volume from Liters to Gallons
  The program takes user input for each unit and displays the converted results.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration for Java Methods Level 2 programs
 
 import java.util.Scanner;

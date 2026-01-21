@@ -4,7 +4,7 @@
  The loop stops when the user enters zero or a negative number.
  Finally, it displays the total sum calculated before termination.
 */
-package coreprogramming.controlflowpractices.level1;
+package CoreProgramming.controlflowpractices.level1;
 // Package declaration for control flow practice programs
 
 import java.util.Scanner;

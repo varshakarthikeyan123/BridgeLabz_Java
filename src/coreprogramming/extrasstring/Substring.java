@@ -2,7 +2,7 @@
  This program finds how many times a substring
  occurs within a given string.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

@@ -4,7 +4,7 @@
  If valid, it uses the formula n*(n+1)/2 to compute the sum
  and displays the result.
 */
-package coreprogramming.controlflowpractices.level1;
+package CoreProgramming.controlflowpractices.level1;
 // Package declaration for control flow practice programs
 
 import java.util.Scanner;

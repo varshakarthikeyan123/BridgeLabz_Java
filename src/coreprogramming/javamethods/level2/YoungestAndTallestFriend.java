@@ -5,7 +5,7 @@
  It takes user input for ages and heights, compares them using methods,
  and prints the youngest and tallest friend.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration for Java Methods Level 2 programs
 
 import java.util.Scanner;

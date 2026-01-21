@@ -4,7 +4,7 @@
  computes BMI using the standard formula, and classifies the
  person into a weight category based on BMI ranges.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

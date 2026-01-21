@@ -4,7 +4,7 @@
  compares them using conditional statements,
  and prints which one is the smallest.
 */
-package coreprogramming.controlflowpractices.level1;
+package CoreProgramming.controlflowpractices.level1;
 // Package declaration for control flow practice programs
 
 import java.util.Scanner;

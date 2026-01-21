@@ -7,7 +7,7 @@
  - Prints "Buzz" if divisible only by 5
  - Prints the number itself otherwise
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 // Package declaration for Level 2 control flow practice programs
 
 import java.util.Scanner;

@@ -4,7 +4,7 @@
  displays the heights, calculates the total sum, and finally computes
  the average height of the team.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

@@ -4,7 +4,7 @@
  can vote based on their age and processes ages of 10 students
  using an array and loops.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration indicating Java Methods Level 2 programs
 
 import java.util.Scanner;

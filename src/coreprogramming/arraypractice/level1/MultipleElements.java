@@ -5,7 +5,7 @@
  2) The array reaches its maximum size.
  It then displays all stored elements and their total sum.
 */
-package coreprogramming.arraypractice.level1; // Defines the package for this program
+package CoreProgramming.arraypractice.level1; // Defines the package for this program
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

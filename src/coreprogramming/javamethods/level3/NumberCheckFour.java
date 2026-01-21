@@ -4,7 +4,7 @@
  This program checks whether a number is Prime, Neon, Spy,
  Automorphic, and Buzz number.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner;
 // Scanner is used to take input from the user

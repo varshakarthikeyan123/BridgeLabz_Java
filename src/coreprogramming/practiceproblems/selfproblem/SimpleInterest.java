@@ -4,7 +4,7 @@
  and time period from the user and applies the
  simple interest formula to compute the result.
 */
-package coreprogramming.practiceproblems.selfproblem;
+package CoreProgramming.practiceproblems.selfproblem;
 
 import java.util.Scanner; // Importing Scanner class to take user input
 

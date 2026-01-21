@@ -6,7 +6,7 @@
  The program takes coordinates of three points as input
  and prints whether they lie on the same straight line.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

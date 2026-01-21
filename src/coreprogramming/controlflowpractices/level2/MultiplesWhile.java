@@ -3,7 +3,7 @@
  using a while loop.
  The number must be positive and less than or equal to 100.
 */
-package coreprogramming.controlflowpractices.level2;
+package CoreProgramming.controlflowpractices.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

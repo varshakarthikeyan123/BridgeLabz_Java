@@ -3,7 +3,7 @@
  It calculates the number of digits, stores each digit in reverse order,
  and then displays the reversed array.
 */
-package coreprogramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
+package CoreProgramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

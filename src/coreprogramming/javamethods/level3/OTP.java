@@ -2,7 +2,7 @@
  This program generates 10 unique 6-digit OTP numbers.
  It keeps regenerating OTPs until all of them are unique.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 public class OTP {
 

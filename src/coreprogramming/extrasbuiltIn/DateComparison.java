@@ -4,7 +4,7 @@
  and determines whether the first date is before,
  after, or equal to the second date.
 */
-package coreprogramming.extrasbuiltIn;
+package CoreProgramming.extrasbuiltIn;
 // Defines the package for extra built-in utility programs
 
 import java.util.Scanner;

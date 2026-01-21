@@ -8,7 +8,7 @@
  5) Inches to Centimeters
  The program takes user input for each unit and displays the converted values.
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 // Package declaration for organizing JavaMethods Level2 programs
 
 import java.util.Scanner;

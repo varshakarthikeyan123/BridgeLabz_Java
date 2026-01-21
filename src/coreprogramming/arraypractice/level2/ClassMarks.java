@@ -5,7 +5,7 @@
  assigns grades based on percentage, and finally
  displays the results in a tabular format.
 */
-package coreprogramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
+package CoreProgramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

@@ -3,7 +3,7 @@
  It reads a string from the user, checks each character, and increments
  vowel or consonant counters based on simple character comparison logic.
 */
-package coreprogramming.Extras; // Specifies the package where this class belongs
+package CoreProgramming.Extras; // Specifies the package where this class belongs
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

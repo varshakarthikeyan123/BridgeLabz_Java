@@ -5,7 +5,7 @@
  calculation, and output in Java.
 */
 
-package coreprogramming.programmingelements.Level1;
+package CoreProgramming.programmingelements.Level1;
 
 public class FeeDiscount {
 

@@ -4,7 +4,7 @@
  2) Whether each positive number is even or odd
  3) Compares the first and last elements of the array
 */
-package coreprogramming.javamethods.level2;
+package CoreProgramming.javamethods.level2;
 
 import java.util.Scanner;
 // Scanner class is used to take input from the user

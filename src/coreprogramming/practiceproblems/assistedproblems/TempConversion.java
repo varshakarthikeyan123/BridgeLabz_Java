@@ -2,7 +2,7 @@
  This program converts temperature from Celsius to Fahrenheit
  using the formula: (C × 9/5) + 32
 */
-package coreprogramming.practiceproblems.assistedproblems;
+package CoreProgramming.practiceproblems.assistedproblems;
 
 import java.util.Scanner; // Importing Scanner class for user input
 

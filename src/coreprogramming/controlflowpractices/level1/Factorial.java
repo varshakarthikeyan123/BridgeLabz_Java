@@ -3,7 +3,7 @@
  It validates user input to ensure the number is positive and non-zero,
  then uses a while loop to compute the factorial value.
 */
-package coreprogramming.controlflowpractices.level1; // Package for Level 1 control flow practice programs
+package CoreProgramming.controlflowpractices.level1; // Package for Level 1 control flow practice programs
 
 import java.util.Scanner; // Imports Scanner class to take input from the user
 

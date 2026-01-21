@@ -4,7 +4,7 @@
  validates input values, determines BMI category,
  and displays the result in a tabular format.
 */
-package coreprogramming.arraypractice.level2; // Package for Level 2 array practice programs
+package CoreProgramming.arraypractice.level2; // Package for Level 2 array practice programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 

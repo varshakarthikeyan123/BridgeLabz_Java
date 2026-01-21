@@ -3,7 +3,7 @@
  It scans the sentence character by character, builds words using letters,
  and compares their lengths to determine the longest word.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 
 import java.util.Scanner;
 // Importing Scanner class to take input from the user

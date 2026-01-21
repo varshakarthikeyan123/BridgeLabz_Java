@@ -3,7 +3,7 @@
  It repeatedly removes the last digit of the number using division
  and increments a counter until the number becomes zero.
 */
-package coreprogramming.controlflowpractices.level3;
+package CoreProgramming.controlflowpractices.level3;
 // Package declaration for Level 3 control flow practice programs
 
 import java.util.Scanner;

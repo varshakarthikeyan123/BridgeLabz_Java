@@ -3,7 +3,7 @@
  It reads a sentence, the word to be replaced,
  and the new word, then prints the modified sentence.
 */
-package coreprogramming.Extras;
+package CoreProgramming.Extras;
 // Package declaration
 
 import java.util.Scanner;

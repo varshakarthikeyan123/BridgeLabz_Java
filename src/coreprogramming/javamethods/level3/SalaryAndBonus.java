@@ -3,7 +3,7 @@
  calculates bonus based on years of service, and displays old salary,
  bonus amount, new salary, and total summaries.
 */
-package coreprogramming.javamethods.level3;
+package CoreProgramming.javamethods.level3;
 
 import java.util.Random;
 

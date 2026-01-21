@@ -3,7 +3,7 @@
  stores them in an array with dynamic resizing,
  and then finds the largest and second largest digits.
 */
-package coreprogramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
+package CoreProgramming.arraypractice.level2; // Defines the package for Level 2 array practice programs
 
 import java.util.Scanner; // Scanner class is used to take input from the user
 
