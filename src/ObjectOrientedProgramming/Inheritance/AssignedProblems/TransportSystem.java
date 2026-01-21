@@ -4,7 +4,7 @@
  Based on user input, different vehicle objects are created and their
  details are displayed using polymorphism.
 */
-package ObjectOrientedProgramming.Inheritance.AssignedProblems; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.assignedproblems; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

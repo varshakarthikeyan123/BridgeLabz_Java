@@ -4,7 +4,7 @@
  and Intern. Based on user input, the appropriate employee object is
  created and the overridden displayDetails() method is executed.
 */
-package ObjectOrientedProgramming.Inheritance.AssignedProblems; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.assignedproblems; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

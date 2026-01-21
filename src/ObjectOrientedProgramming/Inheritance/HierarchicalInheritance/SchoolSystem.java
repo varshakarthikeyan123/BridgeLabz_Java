@@ -4,7 +4,7 @@
  and Staff. Based on user input, the appropriate role object is created
  and its role-specific details are displayed.
 */
-package ObjectOrientedProgramming.Inheritance.HierarchicalInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.hierarchicalinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

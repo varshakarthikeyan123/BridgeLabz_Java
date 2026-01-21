@@ -5,7 +5,7 @@
  The program takes user input, creates a PaidOnlineCourse object,
  and displays course details along with the final fee after discount.
 */
-package ObjectOrientedProgramming.Inheritance.MultilevelInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.multilevelinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

@@ -5,7 +5,7 @@
  The program takes user input, creates a DeliveredOrder object,
  and displays the final order status.
 */
-package ObjectOrientedProgramming.Inheritance.MultilevelInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.multilevelinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

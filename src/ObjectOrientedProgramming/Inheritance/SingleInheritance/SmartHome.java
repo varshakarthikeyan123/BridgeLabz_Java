@@ -4,7 +4,7 @@
  The program takes user input, creates a Thermostat object,
  and displays the current device status and temperature setting.
 */
-package ObjectOrientedProgramming.Inheritance.SingleInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.singleinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

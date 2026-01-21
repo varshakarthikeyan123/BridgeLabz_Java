@@ -3,7 +3,7 @@
  It uses a Worker interface, a base Person class, and two derived classes Chef and Waiter.
  Based on user input, either a Chef or Waiter object is created and their duties are performed.
 */
-package ObjectOrientedProgramming.Inheritance.HierachicalMultilevelInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.hierachicalmultilevelinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

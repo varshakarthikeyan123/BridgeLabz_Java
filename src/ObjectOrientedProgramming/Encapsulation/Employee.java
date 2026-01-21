@@ -6,7 +6,7 @@
 */
 
 
-package ObjectOrientedProgramming.Encapsulation;
+package ObjectOrientedProgramming.encapsulation;
 
 
 // Interface for department details

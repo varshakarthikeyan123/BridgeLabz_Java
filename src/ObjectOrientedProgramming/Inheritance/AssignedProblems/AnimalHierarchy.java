@@ -4,7 +4,7 @@
  Based on user choice, the appropriate animal object is created and
  the overridden makeSound() method is called.
 */
-package ObjectOrientedProgramming.Inheritance.AssignedProblems; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.assignedproblems; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

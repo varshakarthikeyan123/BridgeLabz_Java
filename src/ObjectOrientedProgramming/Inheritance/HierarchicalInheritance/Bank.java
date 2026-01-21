@@ -5,7 +5,7 @@
  Based on user choice, the appropriate account type is created
  and its account type is displayed.
 */
-package ObjectOrientedProgramming.Inheritance.HierarchicalInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.hierarchicalinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 

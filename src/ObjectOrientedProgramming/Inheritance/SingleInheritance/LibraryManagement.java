@@ -4,7 +4,7 @@
  The program takes user input for book and author details,
  creates an Author object, and displays the complete information.
 */
-package ObjectOrientedProgramming.Inheritance.SingleInheritance; // Defines the package for this program
+package ObjectOrientedProgramming.inheritance.singleinheritance; // Defines the package for this program
 
 import java.util.Scanner; // Imports Scanner class to take user input
 
