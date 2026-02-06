@@ -48,5 +48,36 @@ README File
 
 • **17-Jan-2026 (Saturday)**:Completed Week 2. Reordered Repo.
 
+• **19-Jan-2026 (Monday)**: Started working on day 1 DSA remaining practice problems.
+
+• **20-Jan-2026 (Tuesday)**: Attended review for Java on OOPS concepts.
+
+• **21-Jan-2026 (Wednesday)**: Completed week 3 day 1 to day 3 practice problems.
+
+• **22-Jan-2026 (Thursday)**: Completed week 3 day 4 to day 6 practice problems.
+
+• **23-Jan-2026 (Friday)**: Completed creating and pusing coding files to the new repo OOPSBannerApp.
+
+• **24-Jan-2026 (Saturday)**: Added single and multiline commands to the code in OOPSBannerApp.
+
+• **27-Jan-2026 (Tuesday)**: Completed week 4 day 1 coding problems.
+
+• **28-Jan-2026 (Wednesday)**: Completed week 4 day 2 coding problems.
+
+• **29-Jan-2026 (Thursday)**: Completed Console-Based Assignment Posted: Factory Robot Hazard Analyzer.
+
+• **30-Jan-2026 (Friday)**: Attended review for data structure and algorithms
+
+• **31-Jan-2026 (Saturday)**: Completed and uploaded week 4 day 3 practice problems to git-hub.
+
+• **02-Feb-2026 (Monday)**: Completed and uploaded week 4 day 4 practice problems to git-hub.
+
+• **03-Feb-2026 (Tuesday)**: Completed git project on oceanfleetapp.
+
+• **04-Feb-2026 (Wednesday)**: Completed and uploaded week 4 day 5 practice problems to git-hub.
+
+• **05-Feb-2026 (Thursday)**: Completed and uploaded week 4 day 6 practice problems to git-hub.
+
+
 
 
